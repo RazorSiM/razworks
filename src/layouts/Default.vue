@@ -1,0 +1,29 @@
+<template>
+  <div class="layout" :class="theme">
+    <Header></Header>
+    <slot />
+  </div>
+</template>
+
+<script>
+import Header from "../components/Header";
+export default {
+  components: {
+    Header,
+  },
+  computed: {
+    theme() {
+      return this.$store.state.theme;
+    },
+  },
+};
+</script>
+<style>
+.layout {
+  @apply h-full;
+  @apply w-full;
+  @apply fixed;
+  @apply bg-background-base;
+  @apply text-text-foreground;
+}
+</style>
