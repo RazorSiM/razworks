@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Dank;
+    src: url('../fonts/dank.otf');
+    
+}
+
+@font-face {
+    font-family: DankIt;
+    src: url('../fonts/dankIt.otf');
+    
+}
 .dracula {
     --base00: #282936; 
     --base01: #3a3c4e;

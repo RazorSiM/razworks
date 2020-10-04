@@ -22,7 +22,7 @@ module.exports = {
         base: "var(--base00)",
         lighter: "var(--base01)",
         selection: "var(--base02)",
-        highlight: "var(--base02)",
+        highlight: "var(--base03)",
         light: "var(--base07)",
       },
       text: {
@@ -280,6 +280,8 @@ module.exports = {
       default: "1",
     },
     fontFamily: {
+      dank: ["Dank"],
+      dankit: ["DankIt"],
       sans: [
         "system-ui",
         "-apple-system",

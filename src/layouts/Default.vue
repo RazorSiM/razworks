@@ -1,5 +1,5 @@
 <template>
-  <div class="layout" :class="theme">
+  <div class="layout font-dank" :class="theme">
     <Header></Header>
     <slot />
   </div>
@@ -25,5 +25,7 @@ export default {
   @apply fixed;
   @apply bg-background-base;
   @apply text-text-foreground;
+  @apply transition-all;
+  @apply duration-200;
 }
 </style>
