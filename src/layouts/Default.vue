@@ -2,6 +2,7 @@
   <div class="layout font-dank" :class="theme">
     <Header></Header>
     <slot />
+    <Header class="absolute bottom-0"></Header>
   </div>
 </template>
 
