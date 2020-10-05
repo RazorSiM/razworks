@@ -49,6 +49,7 @@ module.exports = {
       discord: "#7289DA",
       instagram: "#E4405F",
       telegram: "#2CA5E0",
+      email: "#FFE01B",
 
       gray: {
         100: "#f7fafc",

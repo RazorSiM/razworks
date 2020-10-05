@@ -7,6 +7,7 @@
 
 <script>
 import Header from "../components/Header";
+
 export default {
   components: {
     Header,
@@ -16,6 +17,7 @@ export default {
       return this.$store.state.theme;
     },
   },
+  mounted() {},
 };
 </script>
 <style>
