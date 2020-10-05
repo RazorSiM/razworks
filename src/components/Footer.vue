@@ -1,22 +1,20 @@
 <template>
-  <div class="container px-2 mx-auto">
-    <header class="header container mx-auto">
-      <strong>
-        <g-link to="/" class="text-accent-var">{{
-          $static.metadata.siteName
-        }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link sm:mx-2" to="/">Home</g-link>
-        <g-link class="nav__link sm:mx-2" to="/portfolio">Portfolio</g-link>
-        <select class="theme-selector" v-model="selTheme">
-          <option v-for="(theme, index) in themes" :key="index">
-            {{ theme }}
-          </option>
-        </select>
-      </nav>
-    </header>
-  </div>
+  <footer class="footer">
+    <strong>
+      <g-link to="/" class="text-accent-var">{{
+        $static.metadata.siteName
+      }}</g-link>
+    </strong>
+    <nav class="nav">
+      <g-link class="nav__link" to="/">Home</g-link>
+      <g-link class="nav__link" to="/portfolio">Portfolio</g-link>
+      <select class="theme-selector" v-model="selTheme">
+        <option v-for="(theme, index) in themes" :key="index">
+          {{ theme }}
+        </option>
+      </select>
+    </nav>
+  </footer>
 </template>
 <static-query>
 query {
@@ -50,7 +48,7 @@ export default {
 };
 </script>
 <style>
-.header {
+.footer {
   @apply w-full;
   @apply flex;
   @apply items-center;
@@ -58,6 +56,7 @@ export default {
   @apply h-16;
 }
 .nav__link {
+  @apply mx-2;
   @apply px-2;
   @apply transition-all;
   @apply duration-200;

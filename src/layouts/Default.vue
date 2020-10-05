@@ -2,7 +2,6 @@
   <div class="layout font-dank" :class="theme">
     <Header></Header>
     <slot />
-    <Header class="absolute bottom-0"></Header>
   </div>
 </template>
 
@@ -24,6 +23,7 @@ export default {
   @apply h-full;
   @apply w-full;
   @apply fixed;
+  @apply overflow-y-auto;
   @apply bg-background-base;
   @apply text-text-foreground;
   @apply transition-all;
