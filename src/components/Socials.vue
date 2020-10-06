@@ -1,7 +1,12 @@
 <template>
   <div>
     <template v-for="(social, index) in $static.metadata.social">
-      <a class="social-icon" v-if="social.url" :href="social.url" :key="index">
+      <a
+        class="social-icon flex flex-col justify-center items-center text-accent-url transition-all duration-100"
+        v-if="social.url"
+        :href="social.url"
+        :key="index"
+      >
         <svg
           class="fill-current w-5 md:w-10 h-auto block"
           role="img"
@@ -11,11 +16,11 @@
           <title>social.name</title>
           <path :d="social.icon"></path>
         </svg>
-        <i class="social-title">{{ social.title }}</i>
+        <i class="social-title font-dankit text-sm">{{ social.title }}</i>
       </a>
       <a
         v-else
-        class="social-icon"
+        class="social-icon font-dankit text-sm"
         @click="$copyText(social.title)"
         :key="index"
       >
@@ -48,23 +53,4 @@ query {
 <script>
 export default {};
 </script>
-<style>
-.social-icon {
-  @apply flex;
-  @apply flex-col;
-  @apply justify-center;
-  @apply items-center;
-  @apply text-accent-url;
-  @apply transition-all;
-  @apply duration-100;
-}
-.social-icon:hover {
-  @apply text-accent-tag;
-  @apply cursor-pointer;
-}
-.social-title {
-  @apply font-dankit;
-  @apply not-italic;
-  @apply text-sm;
-}
-</style>
+<style></style>

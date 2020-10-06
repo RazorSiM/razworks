@@ -27,11 +27,14 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     },
   });
 
-  if (!localStorage.getItem("theme")) {
-    localStorage.setItem("theme", appOptions.store.state.theme);
-  } else {
-    appOptions.store.commit("setTheme", localStorage.getItem("theme"));
+  if (process.isClient) {
+    if (!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", appOptions.store.state.theme);
+    } else {
+      appOptions.store.commit("setTheme", localStorage.getItem("theme"));
+    }
   }
+
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 }
