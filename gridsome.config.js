@@ -13,6 +13,12 @@ module.exports = {
       use: "gridsome-plugin-tailwindcss",
     },
     {
+      use: "gridsome-source-static-meta",
+      options: {
+        path: "./content/site/*.json",
+      },
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Home",
@@ -20,4 +26,13 @@ module.exports = {
       },
     },
   ],
+  transformers: {
+    remark: {
+      plugins: [
+        // "externalLinksRel",
+        // "externalLinksTarget",
+        // ["autolinkClassName", {}],
+      ],
+    },
+  },
 };

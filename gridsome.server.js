@@ -7,10 +7,10 @@
 
 module.exports = function (api) {
   api.loadSource(async (store) => {
-    store.addMetadata("Discord", "Raz#1182");
-    store.addMetadata("Telegram", "https://t.me/RazorSiM");
-    store.addMetadata("Instagram", "https://instagram.com/razorsim");
-    store.addMetadata("Email", "info@raz.works");
+    // store.addMetadata("Discord", "Raz#1182");
+    // store.addMetadata("Telegram", "https://t.me/RazorSiM");
+    // store.addMetadata("Instagram", "https://instagram.com/razorsim");
+    // store.addMetadata("Email", "info@raz.works");
   });
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/

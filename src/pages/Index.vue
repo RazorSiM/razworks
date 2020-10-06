@@ -53,12 +53,7 @@
                 by night
               </h2>
             </div>
-            <div class="socials my-10">
-              <discord-icon></discord-icon>
-              <telegram-icon></telegram-icon>
-              <instagram-icon></instagram-icon>
-              <email-icon></email-icon>
-            </div>
+            <socials class="socials my-10"></socials>
           </div>
         </div>
         <div class="about w-full my-20">
@@ -75,8 +70,7 @@
             real. I am
             <strong class="text-accent-fn"
               >open to collaborations or simple commissions</strong
-            >
-            , just contact me! You can check my works here -
+            >, just contact me! You can check my works here -
             <i class="font-dankit text-background-highlight"
               >minus the secret projects</i
             >
@@ -109,19 +103,13 @@
 </template>
 
 <script>
-import DiscordIcon from "../components/icons/Discord";
-import TelegramIcon from "../components/icons/Telegram";
-import InstagramIcon from "../components/icons/Instagram";
-import EmailIcon from "../components/icons/Email";
+import Socials from "../components/Socials";
 export default {
   metaInfo: {
     title: "Home",
   },
   components: {
-    DiscordIcon,
-    TelegramIcon,
-    InstagramIcon,
-    EmailIcon,
+    Socials,
   },
   data() {
     return {
@@ -152,29 +140,14 @@ export default {
   @apply w-full;
   @apply text-center;
 }
-.socials {
-  @apply w-full;
-  @apply grid;
-  @apply grid-flow-col;
-  @apply gap-4;
-  @apply justify-center;
-}
+
 .image-grid {
   @apply grid;
   @apply gap-1;
   @apply grid-cols-4;
   @apply grid-rows-3;
 }
-a {
-  @apply text-accent-url;
-  @apply font-dankit;
-  @apply transition-all;
-  @apply duration-100;
-}
-a:hover {
-  @apply underline;
-  @apply text-accent-tag;
-}
+
 .shell {
   @apply p-3;
   @apply shadow-lg;
@@ -186,5 +159,12 @@ a:hover {
   @apply justify-between;
   @apply items-center;
   @apply rounded-md;
+}
+.socials {
+  @apply w-full;
+  @apply grid;
+  @apply grid-flow-col;
+  @apply gap-4;
+  @apply justify-center;
 }
 </style>

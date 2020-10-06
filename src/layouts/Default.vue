@@ -31,4 +31,14 @@ export default {
   @apply transition-all;
   @apply duration-200;
 }
+a {
+  @apply text-accent-url;
+  @apply font-dankit;
+  @apply transition-all;
+  @apply duration-100;
+}
+a:hover {
+  @apply underline;
+  @apply text-accent-tag;
+}
 </style>
