@@ -4,9 +4,9 @@
       class="shell__header flex h-8 bg-background-lighter justify-between items-center rounded-md"
     >
       <div class="mx-3 font-bold">{{ title }}</div>
-      <div class="flex-justify-center items-center">
+      <div class="flex justify-center items-center">
         <div
-          class="h-4 w-4 rounded-sm border-solid border- 4 mx-2"
+          class="h-4 w-4 rounded-md border-solid border-4 mx-2"
           :class="`border-${button}`"
           v-for="(button, index) in windowButtons"
           :key="index"

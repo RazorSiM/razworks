@@ -29,7 +29,7 @@ query {
 export default {
   data() {
     return {
-      themes: ["dracula", "nord"],
+      themes: ["dracula", "nord", "avanguardia"],
       selTheme: "",
     };
   },
