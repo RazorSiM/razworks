@@ -1,5 +1,5 @@
 <template>
-  <div class="shell w-full p-3 shadow-lg rounded-md">
+  <div class="shell py-3 px-6 rounded-md">
     <div
       class="shell__header flex h-8 bg-background-lighter justify-between items-center rounded-md"
     >
@@ -14,37 +14,15 @@
       </div>
     </div>
     <div class="shell__content">
-      <div class="shell__content__command my-3">
-        <p class="text-left">
-          <svg
-            class="fill-current h-4 w-auto inline"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>{{ distroTitle }}</title>
-            <path :d="distroIcon"></path>
-          </svg>
-          <span class="text-accent-class font-bold"> ~ </span>
-          <span class="font-bold">> </span>
-          <span class="text-accent-string font-bold font-dankit">{{
-            command
-          }}</span>
-        </p>
-      </div>
-      <div class="command-result">
-        <slot></slot>
-      </div>
+      <slot></slot>
     </div>
   </div>
 </template>
 <script>
 export default {
+  components: {},
   props: {
     title: String,
-    command: String,
-    distroIcon: String,
-    distroTitle: String,
   },
   data() {
     return {

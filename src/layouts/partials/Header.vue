@@ -1,22 +1,42 @@
 <template>
-  <div class="container px-2 mx-auto">
-    <header class="header container mx-auto">
-      <strong>
-        <g-link to="/" class="text-accent-var">{{
-          $static.metadata.siteName
-        }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link sm:mx-2" to="/">Home</g-link>
-        <g-link class="nav__link sm:mx-2" to="/portfolio">Portfolio</g-link>
-        <select class="theme-selector" v-model="selTheme">
+  <header class="header w-full p-3">
+    <div
+      class="bg-background-lighter px-3 h-10 rounded-md flex items-center justify-between"
+    >
+      <div class="flex items-center">
+        <strong class="mr-5">
+          <g-link to="/" class="text-accent-var">{{
+            $static.metadata.siteName
+          }}</g-link>
+        </strong>
+        <nav class="nav h-full flex items-center">
+          <g-link
+            class="nav__link"
+            to="/"
+            active-class="underline bg-background-highlight rounded-sm"
+            >Home</g-link
+          >
+          <g-link
+            class="nav__link"
+            to="/portfolio"
+            active-calss="underline bg-background-highlight"
+            >Portfolio</g-link
+          >
+        </nav>
+      </div>
+
+      <div class="justify-self-end">
+        <select
+          class="border-b-2 bg-background-lighter outline-none focus:outline-none"
+          v-model="selTheme"
+        >
           <option v-for="(theme, index) in themes" :key="index">
             {{ theme }}
           </option>
         </select>
-      </nav>
-    </header>
-  </div>
+      </div>
+    </div>
+  </header>
 </template>
 <static-query>
 query {
@@ -50,34 +70,15 @@ export default {
 };
 </script>
 <style>
-.header {
-  @apply w-full;
-  @apply flex;
-  @apply items-center;
-  @apply justify-around;
-  @apply h-16;
-}
 .nav__link {
-  @apply px-2;
+  @apply px-1;
   @apply transition-all;
   @apply duration-200;
+  @apply block;
 }
 .nav__link:hover {
   @apply font-dankit;
   @apply text-accent-url;
   @apply underline;
-}
-.theme-selector {
-  @apply bg-background-base;
-  @apply border-b-2;
-  @apply border-text-foreground;
-  @apply text-text-foreground;
-  @apply transition-all;
-  @apply duration-100;
-}
-.theme-selector:focus {
-  @apply border-b-2;
-  @apply border-accent-class;
-  @apply outline-none;
 }
 </style>

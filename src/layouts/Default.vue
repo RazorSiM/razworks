@@ -1,12 +1,14 @@
 <template>
   <div class="layout font-dank" :class="theme">
     <Header></Header>
-    <slot />
-    <div
-      v-if="copy"
-      class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
-    >
-      🤖 Item in your Clipboard
+    <div class="container mx-auto px-4 md:px-16">
+      <slot />
+      <div
+        v-if="copy"
+        class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
+      >
+        🤖 Item in your Clipboard
+      </div>
     </div>
   </div>
 </template>
