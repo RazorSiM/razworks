@@ -21,7 +21,7 @@
       <a
         v-else
         class="flex flex-col justify-center items-center text-accent-url transition-all duration-100"
-        @click="$copyText(social.title)"
+        @click="doCopy(social.title)"
         :key="index"
       >
         <svg
@@ -51,5 +51,15 @@ query {
 }
 </static-query>
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    doCopy(value) {
+      this.$copyText(value);
+      this.$store.commit("setCopy", true);
+    },
+  },
+};
 </script>

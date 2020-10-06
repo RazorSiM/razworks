@@ -2,6 +2,12 @@
   <div class="layout font-dank" :class="theme">
     <Header></Header>
     <slot />
+    <div
+      v-if="copy"
+      class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
+    >
+      🤖 Item in your Clipboard
+    </div>
   </div>
 </template>
 
@@ -15,6 +21,21 @@ export default {
   computed: {
     theme() {
       return this.$store.state.theme;
+    },
+    copy() {
+      return this.$store.state.copy;
+    },
+  },
+  methods: {
+    stopCopy() {
+      this.$store.commit("setCopy", false);
+    },
+  },
+  watch: {
+    copy() {
+      setTimeout(() => {
+        this.stopCopy();
+      }, 2000);
     },
   },
   mounted() {},

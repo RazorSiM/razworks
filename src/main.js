@@ -14,15 +14,22 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   appOptions.store = new Vuex.Store({
     state: {
       theme: "dracula",
+      copy: false,
     },
     getters: {
       getTheme: (state) => {
         return state.theme;
       },
+      getCopied: (state) => {
+        return state.copied;
+      },
     },
     mutations: {
       setTheme(state, theme) {
         state.theme = theme;
+      },
+      setCopy(state, value) {
+        state.copy = value;
       },
     },
   });
