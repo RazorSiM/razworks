@@ -26,14 +26,42 @@
       </div>
 
       <div class="justify-self-end">
-        <select
-          class="border-b-2 bg-background-lighter outline-none focus:outline-none"
-          v-model="selTheme"
+        <div
+          class="dropdown inline-block relative"
+          @mouseover="themeMenu = true"
+          @mouseleave="themeMenu = false"
         >
-          <option v-for="(theme, index) in themes" :key="index">
-            {{ theme }}
-          </option>
-        </select>
+          <button
+            class="px-4 rounded inline-flex items-center bg-background-highlight"
+          >
+            <span class="mr-1">{{ selectedTheme }}</span>
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="dropdown-menu absolute pt-1 right-0"
+            :class="{ hidden: !themeMenu }"
+          >
+            <li
+              v-for="(theme, index) in themes"
+              :key="'theme' + index"
+              @click="setTheme(theme)"
+            >
+              <span
+                class="bg-background-lighter hover:bg-background-selection py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >{{ theme }}</span
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -49,22 +77,19 @@ query {
 export default {
   data() {
     return {
-      themes: ["dracula", "nord", "avanguardia"],
-      selTheme: "",
+      themes: ["dracula", "nord", "avanguardia", "bow", "wob"],
+      selectedTheme: "",
+      themeMenu: false,
     };
   },
-  watch: {
-    selTheme: function () {
-      this.setTheme();
-    },
-  },
   mounted() {
-    this.selTheme = this.$store.state.theme;
+    this.selectedTheme = this.$store.state.theme;
   },
   methods: {
-    setTheme() {
-      this.$store.commit("setTheme", this.selTheme);
-      localStorage.setItem("theme", this.selTheme);
+    setTheme(theme) {
+      this.$store.commit("setTheme", theme);
+      localStorage.setItem("theme", theme);
+      this.selectedTheme = theme;
     },
   },
 };

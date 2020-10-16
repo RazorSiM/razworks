@@ -15,9 +15,7 @@
             :distroTitle="distroTitle"
           ></command>
           <div class="printed">
-            <h1 class="text-4xl md:text-6xl font-bold">
-              Hey, I'm <span class="text-accent-class font-dankit">Raz</span>
-            </h1>
+            <ascii></ascii>
             <h2
               class="text-2xl md:text-4xl font-normal text-center leading-tight"
             >
@@ -56,12 +54,10 @@
               <strong class=""
                 >open to collaborations or simple commissions</strong
               >, just contact me! You can check my works here -
-              <i class="font-dankit text-background-highlight"
-                >minus the secret projects</i
-              >
+              <i class="font-dankit">minus the secret projects</i>
               👽
             </p>
-            <p class="text-xs my-3 text-background-highlight">
+            <p class="text-xs my-3">
               PS: the website is highly work in progress. It will definitely
               change during time and I promise I will try to update it with the
               GMK Avanguardia stuff 🐱‍👤
@@ -93,6 +89,7 @@
 import Shell from "../components/Shell";
 import Command from "../components/Command";
 import Socials from "../components/Socials";
+import Ascii from "../components/Ascii";
 export default {
   metaInfo: {
     title: "Home",
@@ -101,6 +98,7 @@ export default {
     Shell,
     Socials,
     Command,
+    Ascii,
   },
   data() {
     return {
