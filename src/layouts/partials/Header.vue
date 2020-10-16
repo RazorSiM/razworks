@@ -1,10 +1,10 @@
 <template>
   <header class="header w-full p-3">
     <div
-      class="bg-background-lighter px-3 h-10 rounded-md flex items-center justify-between"
+      class="bg-background-lighter px-3 h-full sm:h-10 rounded-md flex flex-wrap items-center justify-between"
     >
       <div class="flex items-center">
-        <strong class="mr-5">
+        <strong class="mr-5 break-word">
           <g-link to="/" class="text-accent-var">{{
             $static.metadata.siteName
           }}</g-link>
