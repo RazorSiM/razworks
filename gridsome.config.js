@@ -26,6 +26,19 @@ module.exports = {
         path: "./content/pages/home.md",
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "Project",
+        path: "content/projects/*.md",
+        typeName: "ProjectPost",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
+      },
+    },
   ],
   transformers: {
     remark: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="shell py-3 px-6 rounded-md">
+  <div class="shell p-3 rounded-md">
     <div
       class="shell__header flex h-8 bg-background-lighter justify-between items-center rounded-md"
     >
