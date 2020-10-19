@@ -12,9 +12,11 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gridsome-plugin-tailwindcss": "^3.0.1",
     "gridsome-source-static-meta": "^1.0.1",
     "netlify-cms": "^2.10.63",
     "ogl": "0.0.60",
+    "tailwindcss": "^1.9.4",
     "vue-clipboard2": "^0.3.1",
     "vuex": "^3.5.1"
   },
@@ -26,7 +28,6 @@
     "eslint": "^7.10.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0",
-    "gridsome-plugin-tailwindcss": "^3.0.1",
     "prettier": "^2.1.2"
   }
 }
