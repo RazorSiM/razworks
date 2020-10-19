@@ -49,7 +49,7 @@ module.exports = {
     KeycapProject: [
       {
         name: "KeycapProject",
-        path: "/projects/keycaps/:slug",
+        path: "/projects/keycaps/:pageURL",
       },
     ],
   },
