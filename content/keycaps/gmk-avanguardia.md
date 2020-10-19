@@ -6,10 +6,19 @@ kits:
   - Kit:
       name: Minimalistico
       image: /uploads/base.jpg
+    kit:
+      name: Minimalistico
+      image: /uploads/base.jpg
   - Kit:
       name: Figure e Forme
       image: /uploads/novelties.jpg
+    kit:
+      name: Figure e Forme
+      image: /uploads/novelties.jpg
   - Kit:
+      name: Alternativo
+      image: /uploads/alternativo.jpg
+    kit:
       name: Alternativo
       image: /uploads/alternativo.jpg
 ---
