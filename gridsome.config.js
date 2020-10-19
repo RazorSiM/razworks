@@ -35,9 +35,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        typeName: "Project",
-        path: "content/projects/*.md",
-        typeName: "ProjectPost",
+        path: "content/keycaps/*.md",
+        typeName: "KeycapProject",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
@@ -46,6 +45,14 @@ module.exports = {
       },
     },
   ],
+  templates: {
+    KeycapProject: [
+      {
+        name: "KeycapProject",
+        path: "/projects/keycaps/:slug",
+      },
+    ],
+  },
   transformers: {
     remark: {
       externalLinksTarget: "_blank",

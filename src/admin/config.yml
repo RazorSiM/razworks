@@ -13,6 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "Page URL", name: "pageURL", widget: "string" }
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "featuredImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
