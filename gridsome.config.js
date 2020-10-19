@@ -20,6 +20,12 @@ module.exports = {
       },
     },
     {
+      use: "gridsome-plugin-netlify-cms",
+      opsiont: {
+        publicPath: "/admin",
+      },
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Home",
@@ -42,11 +48,8 @@ module.exports = {
   ],
   transformers: {
     remark: {
-      plugins: [
-        // "externalLinksRel",
-        // "externalLinksTarget",
-        // ["autolinkClassName", {}],
-      ],
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
     },
   },
 };
