@@ -36,7 +36,7 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         path: "content/keycaps/*.md",
-        typeName: "KeycapProject",
+        typeName: "Keycap",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
@@ -44,12 +44,17 @@ module.exports = {
         },
       },
     },
+    {
+      use: "gridsome-plugin-netlify-cms-paths",
+      options: {
+        contentTypes: ["Keykap"],
+      },
+    },
   ],
   templates: {
-    KeycapProject: [
+    Keycap: [
       {
-        name: "KeycapProject",
-        path: "/projects/keycaps/:pageURL",
+        path: "/projects/keycaps/:title",
       },
     ],
   },

@@ -3,22 +3,16 @@ pageURL: gmk-avanguardia
 title: GMK Avanguardia
 featuredImage: /uploads/due.png
 kits:
-  - Kit:
+ 
+    - kit:
       name: Minimalistico
       image: /uploads/base.jpg
-    kit:
-      name: Minimalistico
-      image: /uploads/base.jpg
-  - Kit:
+  
+    - kit:
       name: Figure e Forme
       image: /uploads/novelties.jpg
-    kit:
-      name: Figure e Forme
-      image: /uploads/novelties.jpg
-  - Kit:
-      name: Alternativo
-      image: /uploads/alternativo.jpg
-    kit:
+  
+    - kit:
       name: Alternativo
       image: /uploads/alternativo.jpg
 ---

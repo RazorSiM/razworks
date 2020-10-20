@@ -65,8 +65,17 @@
           </div>
         </shell>
       </div>
+      <div v-for="edge in $page.keycaps.edges" :key="'keycap' + edge.node.id">
+        <project-small
+          :title="edge.node.title"
+          :image="edge.node.featuredImage"
+          :excerpt="edge.node.excerpt"
+          :url="edge.node.path"
+        ></project-small>
+        <g-link :to="edge.node.path">asdfafsd</g-link>
+      </div>
 
-      <div class="featured-works">
+      <!-- <div class="featured-works">
         <h3 class="text-right text-2xl font-bold mb-4">🌟Starred Works</h3>
         <div
           class="image-grid grid gap-1 grid-cols-4 grid-rows-3 grid-flow-col-dense"
@@ -82,16 +91,34 @@
             </div>
           </template>
         </div>
-      </div>
+      </div> -->
     </div>
   </Layout>
 </template>
-
+<page-query>
+query {
+  keycaps: allKeycap {
+    edges {
+      node {
+        id
+        excerpt
+        pageURL
+        title
+        featuredImage
+        path
+      }
+    }
+  }
+}
+</page-query>
 <script>
 import Shell from "../components/Shell";
 import Command from "../components/Command";
 import Socials from "../components/Socials";
 import Ascii from "../components/Ascii";
+
+import ProjectSmall from "../components/ProjectSmall";
+
 export default {
   metaInfo: {
     title: "Home",
@@ -101,6 +128,7 @@ export default {
     Socials,
     Command,
     Ascii,
+    ProjectSmall,
   },
   data() {
     return {
