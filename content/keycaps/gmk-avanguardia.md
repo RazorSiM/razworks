@@ -1,6 +1,6 @@
 ---
 pageURL: gmk-avanguardia
-title: GMK Avanguardia
+title: GMK Avanguardia ONE
 featuredImage: /uploads/due.png
 kits:
   - Kit:
