@@ -1,17 +1,17 @@
 ---
 pageURL: gmk-avanguardia
 title: GMK Avanguardia
-featuredImage: /uploads/due.png
+featuredImage: ./images/avanguardia_pizza.jpg
 kits:
   - kit:
       name: Minimalistico
-      image: /uploads/base.jpg
+      image: ./images/avanguardia_base.jpg
   - kit:
       name: Figure e Forme
-      image: /uploads/novelties.jpg
+      image: ./images/avanguardia_novelty.jpg
   - kit:
       name: Alternativo
-      image: /uploads/alternativo.jpg
+      image: ./images/avanguardia_alpha.jpg
 ---
 Some test to build up some awesome description with **bold text**, *italic* test and [links](https://blog.simonecolabufalo.com)
 

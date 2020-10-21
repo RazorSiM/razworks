@@ -1,11 +1,11 @@
 ---
 pageURL: epbt-grandtour
 title: ePBT Grand Tour
-featuredImage: /uploads/2.jpg
+featuredImage: ./images/grandtour_featured.jpg
 kits:
   - kit:
       name: Faster than Light
-      image: /uploads/ftl.jpg
+      image: ./images/grandtour_base.jpg
 ---
 Sto set lorem ipsumiamolo è una collab con fedemito
 

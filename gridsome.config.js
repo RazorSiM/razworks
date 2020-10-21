@@ -20,12 +20,6 @@ module.exports = {
       },
     },
     {
-      use: "gridsome-plugin-netlify-cms",
-      opsiont: {
-        publicPath: "/admin",
-      },
-    },
-    {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Home",
@@ -42,12 +36,6 @@ module.exports = {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],
         },
-      },
-    },
-    {
-      use: "gridsome-plugin-netlify-cms-paths",
-      options: {
-        contentTypes: ["Keykap"],
       },
     },
   ],
