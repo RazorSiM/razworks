@@ -102,7 +102,6 @@ query {
       node {
         id
         excerpt
-        pageURL
         title
         featuredImage
         path

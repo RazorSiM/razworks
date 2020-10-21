@@ -1,7 +1,6 @@
 ---
-pageURL: gmk-avanguardia
 title: GMK Avanguardia
-featuredImage: ./images/avanguardia_pizza.jpg
+featuredImage: ./images/avanguardia_pizza.png
 kits:
   - kit:
       name: Minimalistico
