@@ -23,7 +23,7 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Home",
-        path: "./content/pages/home.md",
+        path: "content/pages/home.md",
       },
     },
     {

@@ -46,13 +46,14 @@
             </svg>
           </button>
           <ul
-            class="dropdown-menu absolute pt-1 right-0"
+            class="dropdown-menu absolute pt-1 right-0 z-10"
             :class="{ hidden: !themeMenu }"
           >
             <li
               v-for="(theme, index) in themes"
               :key="'theme' + index"
               @click="setTheme(theme)"
+              class="cursor-pointer"
             >
               <span
                 class="bg-background-lighter hover:bg-background-selection py-2 px-4 block whitespace-no-wrap"

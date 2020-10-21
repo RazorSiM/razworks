@@ -1,33 +1,39 @@
 ---
 title: GMK Avanguardia
-featuredImage: ./images/avanguardia_pizza.png
-kits:
-  - kit:
-      name: Minimalistico
-      image: ./images/avanguardia_base.jpg
-  - kit:
-      name: Figure e Forme
-      image: ./images/avanguardia_novelty.jpg
-  - kit:
-      name: Alternativo
-      image: ./images/avanguardia_alpha.jpg
+logo: ./images/avanguardia/avanguardia_logo.png
+date: 2020-04-26
+featuredImage: ./images/avanguardia/avanguardia_pizza.png
+excerpt: A GMK set inspired to the minimalistic art of Kandinsky
+kits: 
+    - {name: Minimalistico, image: ./images/avanguardia/kits/avanguardia_base.jpg}
+    - {name: Figure e Forme, image: ./images/avanguardia/kits/avanguardia_novelty.jpg}
+    - {name: Alternativo, image: ./images/avanguardia/kits/avanguardia_alpha.jpg}
+renders: [
+    {
+        name: Rama M60,
+        images: [./images/avanguardia/boards/m60_1.jpg, ./images/avanguardia/boards/m60_2.jpg, ./images/avanguardia/boards/m60_3.jpg, ./images/avanguardia/boards/m60_4.jpg]
+    }
+]
 ---
-Some test to build up some awesome description with **bold text**, *italic* test and [links](https://blog.simonecolabufalo.com)
+# GMK Avanguardia
+* Link to the IC FORM:https://forms.gle/CvNgVBDoBvLn8xhx7
+* Link to the Discord Server: https://discord.gg/MrdRDzy
 
-there are even some
+I partnered up with my friend and designer Johnnymalandra and came up with the idea of **GMK Avanguardia**:
+I chose an italian word that, as you can guess corresponds to *Avant-guard* or *Vanguard*,
+referring to all those extreme, daring and innovative artists with a futuristic sight capable of anticipating their times.
 
-# titles
+I have seen that sets featuring themes related to modern pop culture have always been appreciated, so I thought, why not pay respect to a great artist who influenced it the most in shapes and colors.
+More than content, this set draws its inspiration from **Kandinsky's words**:
+> Art goes beyond the limits in which time would like to compress it, and indicates the content in the future
 
-## subtitles
+The Color Palette
+![Color Palette](https://i.imgur.com/acs7V5g.jpg)
 
-### even subber than subtitles
+We especially referred to **Vasilij Vasil’evič Kandinskij** and this painting to get the inspiration for the **novelties**:
+![Painting](https://i.imgur.com/ND7672H.png)
 
-a
 
-* magic
+We wanted to give our concept a more personal interpretation by using a palette oriented towards the tech world and so the result is down here!
 
-* list
-
-and a
-
-> big ass quote
+I would like to thank all my friends from the **ClickyClackClub Italian community** for the support they showed me and Johnnymalandra for the awesome artworks!

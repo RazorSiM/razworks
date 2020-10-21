@@ -9,6 +9,44 @@ module.exports = {
   important: false,
   separator: ":",
   theme: {
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme("colors.text.foreground"),
+          h1: {
+            color: theme("colors.text.foreground"),
+          },
+          h2: {
+            color: theme("colors.text.foreground"),
+          },
+          h3: {
+            color: theme("colors.text.foreground"),
+          },
+          h4: {
+            color: theme("colors.text.foreground"),
+          },
+          a: {
+            color: theme("colors.accent.url"),
+            transition: "all 0.2s",
+            "&:hover": {
+              color: theme("colors.accent.tag"),
+            },
+          },
+          strong: { color: theme("colors.accent.string") },
+          blockquote: {
+            color: theme("colors.accent.quote"),
+            "border-left-color": theme("colors.accent.quote"),
+          },
+          ul: {
+            li: {
+              "&::before": {
+                "background-color": theme("colors.accent.quote"),
+              },
+            },
+          },
+        },
+      },
+    }),
     screens: {
       sm: "640px",
       md: "768px",
@@ -829,5 +867,5 @@ module.exports = {
     animation: ["responsive"],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

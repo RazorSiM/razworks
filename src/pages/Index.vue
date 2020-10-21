@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="index">
+    <div class="index container mx-auto px-4 md:px-16">
       <div class="intro my-20 md:my-32 w-full text-center flex justify-center">
         <shell
           title="zsh"
@@ -72,7 +72,6 @@
           :excerpt="edge.node.excerpt"
           :url="edge.node.path"
         ></project-small>
-        <g-link :to="edge.node.path">asdfafsd</g-link>
       </div>
 
       <!-- <div class="featured-works">
@@ -103,7 +102,7 @@ query {
         id
         excerpt
         title
-        featuredImage
+        featuredImage(quality: 80)
         path
       }
     }
