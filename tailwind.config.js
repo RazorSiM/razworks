@@ -44,6 +44,19 @@ module.exports = {
               },
             },
           },
+          table: {
+            color: theme("colors.text.foreground"),
+            thead: {
+              color: theme("colors.accent.fn"),
+              "border-bottom-color": theme("colors.background.highlight"),
+            },
+            tbody: {
+              color: theme("colors.text.foreground"),
+              tr: {
+                "border-bottom-color": theme("colors.background.selection"),
+              },
+            },
+          },
         },
       },
     }),

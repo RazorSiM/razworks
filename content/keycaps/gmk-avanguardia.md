@@ -2,7 +2,7 @@
 title: GMK Avanguardia
 logo: ./images/avanguardia/avanguardia_logo.png
 date: 2020-04-26
-featuredImage: ./images/avanguardia/avanguardia_pizza.png
+featuredImage: ./images/avanguardia/boards/alpine65.png
 excerpt: A GMK set inspired to the minimalistic art of Kandinsky
 kits: 
     - {name: Minimalistico, image: ./images/avanguardia/kits/avanguardia_base.jpg}
@@ -15,16 +15,42 @@ kits:
 mousepads:
     - {name: Dark, image: ./images/avanguardia/mousepads/avanguardia_dark.png}
     - {name: Light, image: ./images/avanguardia/mousepads/avanguardia_light.png}
+
 renders: [
     {
+        name: TGR 910,
+        images: [./images/avanguardia/boards/tgr910.jpg]
+    },
+    {
         name: Rama M60,
-        images: [./images/avanguardia/boards/m60_1.jpg, ./images/avanguardia/boards/m60_2.jpg, ./images/avanguardia/boards/m60_3.jpg, ./images/avanguardia/boards/m60_4.jpg]
+        images: [./images/avanguardia/boards/m60.jpg]
+    },
+    {
+        name: Melody65,
+        images: [./images/avanguardia/boards/melody65.jpg]
+    },
+    {
+        name: Iris,
+        images: [./images/avanguardia/boards/iris.jpg]
     }
 ]
 ---
 # GMK Avanguardia
 * Link to the IC FORM:https://forms.gle/CvNgVBDoBvLn8xhx7
 * Link to the Discord Server: https://discord.gg/MrdRDzy
+
+## Updates
+I am getting the quotes from GMK, GB date is going to be announced soon!
+Meanwhile those are the **proxies**
+
+| Region | Vendor    |
+|--------|-----------|
+| Europe | [Candykeys](https://candykeys.com/) |
+| Asia   | [iLumkb](https://ilumkb.com/)    |
+| Canada | [Deskhero](https://www.deskhero.ca/)  |
+| USA    | TBD       |
+| Australia | TBD    |
+
 
 I partnered up with my friend and designer Johnnymalandra and came up with the idea of **GMK Avanguardia**:
 I chose an italian word that, as you can guess corresponds to *Avant-guard* or *Vanguard*,

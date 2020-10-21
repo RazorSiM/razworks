@@ -73,6 +73,7 @@
             <h3>{{ render.name }}</h3>
           </div>
           <div
+            v-if="render.images.length > 1"
             class="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-row mt-6"
           >
             <div
@@ -89,6 +90,22 @@
               ></g-image>
             </div>
           </div>
+          <template v-else>
+            <div
+              v-for="(image, index) in render.images"
+              :key="render.name + index"
+              class="prose mx-auto"
+            >
+              <g-image
+                :src="image"
+                @click="
+                  lightboxImage = image;
+                  showLightbox = true;
+                "
+                class="hover:cursor-pointer"
+              ></g-image>
+            </div>
+          </template>
         </div>
       </div>
       <lightbox
