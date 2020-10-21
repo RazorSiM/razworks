@@ -29,7 +29,13 @@
       </div>
       <div class="grid gap-1 grid-cols-3 grid-flow-row mt-6">
         <div v-for="(kit, index) in $page.keycap.kits" :key="'kit' + index">
-          <g-image :src="kit.image"></g-image>
+          <g-image
+            :src="kit.image"
+            @click="
+              lightboxImage = kit.image;
+              showLightbox = true;
+            "
+          ></g-image>
         </div>
       </div>
     </div>
@@ -59,6 +65,7 @@
       </div>
     </div>
     <lightbox
+      v-if="lightboxImage !== null"
       :image="lightboxImage"
       :showing="showLightbox"
       @close="showLightbox = false"
