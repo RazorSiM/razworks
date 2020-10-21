@@ -1,27 +1,15 @@
 <template>
   <header class="header w-full p-3">
     <div
-      class="bg-background-lighter px-3 h-full sm:h-10 rounded-md flex flex-wrap items-center justify-between"
+      class="bg-background-lighter px-3 py-2 h-full sm:h-10 rounded-md flex flex-wrap items-center justify-between"
     >
       <div class="flex items-center">
         <strong class="mr-5 break-word">
-          <g-link to="/" class="text-accent-var">{{
-            $static.metadata.siteName
-          }}</g-link>
+          {{ $static.metadata.siteName }}
         </strong>
         <nav class="nav h-full flex items-center">
-          <g-link
-            class="nav__link"
-            to="/"
-            active-class="underline bg-background-highlight rounded-sm"
-            >Home</g-link
-          >
-          <g-link
-            class="nav__link"
-            to="/portfolio"
-            active-calss="underline bg-background-highlight"
-            >Portfolio</g-link
-          >
+          <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/projects">Projects</g-link>
         </nav>
       </div>
 
@@ -106,5 +94,10 @@ export default {
   @apply font-dankit;
   @apply text-accent-url;
   @apply underline;
+}
+.active--exact {
+  @apply underline;
+  @apply bg-background-highlight;
+  @apply rounded-sm;
 }
 </style>

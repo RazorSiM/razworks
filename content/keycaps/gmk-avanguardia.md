@@ -12,6 +12,9 @@ kits:
     - {name: Striscia, image: ./images/avanguardia/kits/avanguardia_num.jpg}
     - {name: 40Per100, image: ./images/avanguardia/kits/avanguardia_40.jpg}
     - {name: Linee, image: ./images/avanguardia/kits/avanguardia_space.jpg}
+mousepads:
+    - {name: Dark, image: ./images/avanguardia/mousepads/avanguardia_dark.png}
+    - {name: Light, image: ./images/avanguardia/mousepads/avanguardia_light.png}
 renders: [
     {
         name: Rama M60,

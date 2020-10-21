@@ -1,5 +1,5 @@
 <template>
-  <div class="layout font-dank" :class="theme">
+  <div class="layout font-dank pb-32" :class="theme">
     <Header></Header>
     <!-- <div class="container mx-auto px-4 md:px-16"> -->
     <slot />

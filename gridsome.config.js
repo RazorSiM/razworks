@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Raz | Works",
+  siteName: "Raz.WORKS",
   siteDescription:
     "Web Developer & Designer, Keyboards enthusiast, Blender fan",
   siteUrl: "https://raz.works",

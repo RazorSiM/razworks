@@ -3,7 +3,7 @@
     <div
       v-if="showing"
       class="fixed inset-0 w-screen h-screen flex items-center justify-center bg-smoke-800 z-50"
-      @click.self="closeIfShown"
+      @click.prevent="closeIfShown"
     >
       <div class="max-h-screen w-full max-w-screen shadow-lg flex">
         <div class="overflow-auto max-h-screen mx-auto relative">

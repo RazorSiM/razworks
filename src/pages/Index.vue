@@ -65,8 +65,11 @@
           </div>
         </shell>
       </div>
-      <div v-for="edge in $page.keycaps.edges" :key="'keycap' + edge.node.id">
+      <h2 class="text-4xl font-bold mb-6">Latest Projects</h2>
+      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-6">
         <project-small
+          v-for="edge in $page.keycaps.edges"
+          :key="'keycap' + edge.node.id"
           :title="edge.node.title"
           :image="edge.node.featuredImage"
           :excerpt="edge.node.excerpt"
@@ -96,13 +99,13 @@
 </template>
 <page-query>
 query {
-  keycaps: allKeycap {
+  keycaps: allKeycap(limit: 3, sortBy: "date") {
     edges {
       node {
         id
         excerpt
         title
-        featuredImage(quality: 80)
+        featuredImage(quality: 40)
         path
       }
     }
