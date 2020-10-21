@@ -8,6 +8,10 @@ kits:
     - {name: Minimalistico, image: ./images/avanguardia/kits/avanguardia_base.jpg}
     - {name: Figure e Forme, image: ./images/avanguardia/kits/avanguardia_novelty.jpg}
     - {name: Alternativo, image: ./images/avanguardia/kits/avanguardia_alpha.jpg}
+    - {name: Milleottocento, image: ./images/avanguardia/kits/avanguardia_1800.jpg}
+    - {name: Striscia, image: ./images/avanguardia/kits/avanguardia_num.jpg}
+    - {name: 40Per100, image: ./images/avanguardia/kits/avanguardia_40.jpg}
+    - {name: Linee, image: ./images/avanguardia/kits/avanguardia_space.jpg}
 renders: [
     {
         name: Rama M60,
