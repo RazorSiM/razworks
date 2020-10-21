@@ -94,7 +94,7 @@
             <div
               v-for="(image, index) in render.images"
               :key="render.name + index"
-              class="prose mx-auto"
+              class="container mx-auto"
             >
               <g-image
                 :src="image"
