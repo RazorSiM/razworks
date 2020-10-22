@@ -6,10 +6,13 @@
       <div class="mx-3 font-bold">{{ title }}</div>
       <div class="flex justify-center items-center">
         <div
-          class="h-4 w-4 rounded-md border-solid border-4 mx-2"
-          :class="`border-${button}`"
-          v-for="(button, index) in windowButtons"
-          :key="index"
+          class="h-4 w-4 rounded-md border-solid border-4 mx-2 border-accent-var"
+        ></div>
+        <div
+          class="h-4 w-4 rounded-md border-solid border-4 mx-2 border-accent-class"
+        ></div>
+        <div
+          class="h-4 w-4 rounded-md border-solid border-4 mx-2 border-accent-string"
         ></div>
       </div>
     </div>
