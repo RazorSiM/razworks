@@ -18,7 +18,7 @@ renders:
 ---
 # ePBT Grand Tour by FEDEMITO
 
-*I am not the GB Runner here! I was commissioned some renders and mousepads designs!*
+*I am not the GB Runner here! I was commissioned some renders and mousepads designs! Below will be ONLY my renders/designs, nothing else*
 
 Link to the IC on Geekhack [here](https://geekhack.org/index.php?topic=108068.0), link to the Discord server [here](https://discord.gg/5RcuT2c).
 

@@ -4,7 +4,12 @@
     <g-image :src="image" class=""></g-image>
     <div class="p-3">
       <p>{{ excerpt }}</p>
-      <g-link :to="url">Checkout this project!</g-link>
+
+      <g-link
+        class="mt-2 font-bold text-center block p-2 border border-background-lighter bg-background-selection hover:bg-background-highlight rounded shadow-lg"
+        :to="url"
+        >Checkout this project!</g-link
+      >
     </div>
   </div>
 </template>
