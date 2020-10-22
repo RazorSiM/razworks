@@ -106,7 +106,7 @@
                   lightboxImage = image;
                   showLightbox = true;
                 "
-                class="hover:cursor-pointer mx-auto"
+                class="hover:cursor-pointer mx-auto w-full h-auto"
               ></g-image>
             </div>
           </template>

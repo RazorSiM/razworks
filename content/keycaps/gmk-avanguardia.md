@@ -2,7 +2,7 @@
 title: GMK Avanguardia
 logo: ./images/avanguardia/avanguardia_logo.png
 date: 2020-04-26
-featuredImage: ./images/avanguardia/boards/alpine65.jpg
+featuredImage: ./images/avanguardia/boards/m60_1.jpg
 excerpt: A GMK set inspired to the minimalistic art of Kandinsky
 kits:
   - {
@@ -30,7 +30,7 @@ mousepads:
 
 renders:
   [
-    { name: Rama M60, images: [./images/avanguardia/boards/m60.jpg] },
+    { name: Rama M60, images: [./images/avanguardia/boards/m60_1.jpg, ./images/avanguardia/boards/m60_2.jpg ] },
     { name: TGR 910, images: [./images/avanguardia/boards/tgr910.jpg] },
     { name: Melody65, images: [./images/avanguardia/boards/melody65.jpg] },
     { name: Iris, images: [./images/avanguardia/boards/iris.jpg] },
