@@ -7,6 +7,7 @@
 module.exports = {
   siteName: "Raz.WORKS",
   siteUrl: "https://raz.works",
+  icon: "./src/assets/images/razlogo.png",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",

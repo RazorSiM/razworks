@@ -186,6 +186,16 @@ export default {
           name: "twitter:description",
           content: this.$page.keycap.excerpt,
         },
+        {
+          key: "twitter:image",
+          name: "twitter:image",
+          content: this.$page.keycap.featuredImage,
+        },
+        {
+          key: "og:image",
+          name: "og:image",
+          content: this.$page.keycap.featuredImage,
+        },
       ],
     };
   },

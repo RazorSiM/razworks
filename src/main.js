@@ -39,7 +39,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   head.meta.push({
     key: "og:image",
     name: "og:image",
-    content: "./assets/images/m60_1.jpg",
+    content: "/socialShare.jpg",
   });
   head.meta.push({
     key: "twitter:title",
@@ -55,7 +55,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   head.meta.push({
     key: "twitter:image",
     name: "twitter:image",
-    content: "./assets/images/m60_1.jpg",
+    content: "/socialShare.jpg",
   });
   router.beforeEach((to, _from, next) => {
     head.meta.push({

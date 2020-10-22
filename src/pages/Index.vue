@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="index container mx-auto px-4 md:px-16">
-      <div class="intro my-20 md:my-32 w-full text-center flex justify-center">
+      <div class="intro my-20 md:my-32 w-full flex justify-center">
         <shell
           title="zsh"
           command="./init.sh"
@@ -37,11 +37,9 @@
             :distroTitle="distroTitle"
           ></command>
 
-          <div class="w-full mx-auto text-left">
-            <h3 class="text-left text-2xl font-bold mb-4 text-accent-fn">
-              What, how and why
-            </h3>
-            <p class="text-xl">
+          <div class="prose mx-auto">
+            <h3 class="">What, how and why</h3>
+            <p class="">
               I am going to skip the presentations to go straight to the point:
               I like <strong>designing stuff</strong> and I love
               <strong>custom products</strong>. I started learning
@@ -54,10 +52,10 @@
               <strong class=""
                 >open to collaborations or simple commissions</strong
               >, just contact me! You can check my works here -
-              <i class="font-dankit">minus the secret projects</i>
+              <i class="f">minus the secret projects</i>
               👽
             </p>
-            <p class="text-xs my-3">
+            <p class="t">
               PS: the website is highly work in progress. It will definitely
               change during time and I promise I will try to update it with the
               GMK Avanguardia stuff 🐱‍👤
@@ -77,23 +75,28 @@
         ></project-small>
       </div>
 
-      <!-- <div class="featured-works">
-        <h3 class="text-right text-2xl font-bold mb-4">🌟Starred Works</h3>
+      <div class="featured-works">
+        <h3 class="text-right text-2xl font-bold mb-4">🌟Some of my works!</h3>
         <div
           class="image-grid grid gap-1 grid-cols-4 grid-rows-3 grid-flow-col-dense"
         >
-          <template v-for="(img, index) in imagesOrder">
+          <template v-for="(img, index) in $page.home.edges[0].node.bestImages">
             <div
-              :key="index"
+              :key="'' + index"
               class="bg-background-lighter"
               :class="{ 'col-span-3 row-span-3': index === activeIndex }"
               @click="activeIndex = index"
             >
-              <img :src="img" class="object-cover w-full h-full" />
+              <g-image
+                v-if="img.image !== null"
+                :alt="img.name"
+                :src="img.image"
+                class="object-cover w-full h-full"
+              />
             </div>
           </template>
         </div>
-      </div> -->
+      </div>
     </div>
   </Layout>
 </template>
@@ -107,6 +110,16 @@ query {
         title
         featuredImage(quality: 40)
         path
+      }
+    }
+  }
+  home: allHome {
+    edges {
+      node {
+        bestImages {
+          name
+          image
+        }
       }
     }
   }
