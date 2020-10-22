@@ -3,6 +3,7 @@
     <div class="keycap mb-10">
       <div class="hero relative">
         <g-image
+          v-if="$page.keycap.featuredImage !== null"
           :src="$page.keycap.featuredImage"
           class="w-full h-auto"
         ></g-image>
@@ -33,6 +34,7 @@
         >
           <div v-for="(kit, index) in $page.keycap.kits" :key="'kit' + index">
             <g-image
+              v-if="kit.image !== null"
               :src="kit.image"
               @click="
                 lightboxImage = kit.image;
@@ -47,12 +49,13 @@
         <div class="prose lg:prose-xl mx-auto px-2">
           <h2>Mousepads</h2>
         </div>
-        <div class="grid gap-1 grid-col-1 sm:grid-flow-col grid-flow-row mt-6">
+        <div class="grid gap-1 grid-cols-1 sm:grid-cols-2 grid-flow-row mt-6">
           <div
             v-for="(mousepad, index) in $page.keycap.mousepads"
             :key="'mousepad' + index"
           >
             <g-image
+              v-if="mousepad.image !== null"
               :src="mousepad.image"
               @click="
                 lightboxImage = mousepad.image;
@@ -74,13 +77,14 @@
           </div>
           <div
             v-if="render.images.length > 1"
-            class="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-row mt-6"
+            class="grid gap-1 grid-cols-1 sm:grid-cols-2 grid-flow-row mt-6"
           >
             <div
               v-for="(image, index) in render.images"
               :key="render.name + index"
             >
               <g-image
+                v-if="image !== null"
                 :src="image"
                 @click="
                   lightboxImage = image;
@@ -102,7 +106,7 @@
                   lightboxImage = image;
                   showLightbox = true;
                 "
-                class="hover:cursor-pointer"
+                class="hover:cursor-pointer mx-auto"
               ></g-image>
             </div>
           </template>
@@ -157,7 +161,7 @@ export default {
 };
 </script>
 <style>
-.prose p img {
+.prose img {
   @apply mx-auto;
   @apply block;
 }
