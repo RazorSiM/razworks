@@ -137,6 +137,7 @@ query ($id: ID!) {
     date
     logo (width: 250)
     featuredImage (quality: 100  fit: cover )
+    excerpt
     kits {
       image
       name
@@ -163,24 +164,29 @@ export default {
       title: this.$page.keycap.title,
       meta: [
         {
-          key: "og:title",
-          name: "og:title",
-          content: "Raz.WORKS - " + this.$page.keycap.title,
-        },
-        {
-          key: "twitter:title",
-          name: "twitter:title",
-          content: "Raz.WORKS - " + this.$page.keycap.title,
-        },
-        {
           key: "description",
           name: "description",
           content: this.$page.keycap.excerpt,
         },
         {
-          key: "og:description",
-          name: "og:description",
-          content: this.$page.keycap.excerpt,
+          key: "twitter:card",
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          key: "twitter:site",
+          name: "twitter:site",
+          content: "@Razor_SiM",
+        },
+        {
+          key: "twitter:creator",
+          name: "twitter:creator",
+          content: "@Razor_SiM",
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Raz.WORKS - " + this.$page.keycap.title,
         },
         {
           key: "twitter:description",
@@ -190,7 +196,33 @@ export default {
         {
           key: "twitter:image",
           name: "twitter:image",
-          content: this.$page.keycap.featuredImage,
+          content: "https://raz.works" + this.$page.keycap.featuredImage.src,
+        },
+        {
+          key: "twitter:image:alt",
+          name: "twitter:image:alt",
+          content: this.$page.keycap.title,
+        },
+        {
+          key: "og:type",
+          name: "og:type",
+          content: "website",
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Raz.WORKS - " + this.$page.keycap.title,
+        },
+        {
+          key: "og:description",
+          name: "og:description",
+          content: this.$page.keycap.excerpt,
+        },
+
+        {
+          key: "og:image:alt",
+          name: "og:image:alt",
+          content: this.$page.keycap.title,
         },
         {
           key: "og:image",
