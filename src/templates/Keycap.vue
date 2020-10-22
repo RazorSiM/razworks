@@ -6,6 +6,7 @@
           v-if="$page.keycap.featuredImage !== null"
           :src="$page.keycap.featuredImage"
           class="w-full h-auto"
+          :alt="$page.keycap.title"
         ></g-image>
         <h1
           v-if="!$page.keycap.logo"
@@ -14,9 +15,10 @@
           {{ $page.keycap.title }}
         </h1>
         <g-image
+          v-if="$page.keycap.logo !== null"
           class="absolute bottom-0 p-4"
-          v-else
           :src="$page.keycap.logo"
+          :alt="$page.keycap.title + ' logo'"
         ></g-image>
       </div>
 
@@ -41,6 +43,7 @@
                 showLightbox = true;
               "
               class="hover:cursor-pointer"
+              :alt="$page.keycap.title + ' ' + kit.name"
             ></g-image>
           </div>
         </div>
@@ -62,6 +65,7 @@
                 showLightbox = true;
               "
               class="hover:cursor-pointer"
+              :alt="$page.keycap.title + ' ' + mousepad.name"
             ></g-image>
           </div>
         </div>
@@ -91,6 +95,7 @@
                   showLightbox = true;
                 "
                 class="hover:cursor-pointer"
+                :alt="$page.keycap.title + ' ' + render.name"
               ></g-image>
             </div>
           </div>
@@ -101,12 +106,14 @@
               class="container mx-auto"
             >
               <g-image
+                v-if="image !== null"
                 :src="image"
                 @click="
                   lightboxImage = image;
                   showLightbox = true;
                 "
                 class="hover:cursor-pointer mx-auto w-full h-auto"
+                :alt="$page.keycap.title + ' ' + render.name"
               ></g-image>
             </div>
           </template>
