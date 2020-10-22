@@ -6,8 +6,6 @@
 
 module.exports = {
   siteName: "Raz.WORKS",
-  siteDescription:
-    "Web Developer & Designer, Keyboards enthusiast, Blender fan",
   siteUrl: "https://raz.works",
   plugins: [
     {

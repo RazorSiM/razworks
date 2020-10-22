@@ -155,7 +155,40 @@ query ($id: ID!) {
 </page-query>
 <script>
 import Lightbox from "../components/Lightbox";
+
 export default {
+  metaInfo() {
+    return {
+      title: this.$page.keycap.title,
+      meta: [
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Raz.WORKS - " + this.$page.keycap.title,
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Raz.WORKS - " + this.$page.keycap.title,
+        },
+        {
+          key: "description",
+          name: "description",
+          content: this.$page.keycap.excerpt,
+        },
+        {
+          key: "og:description",
+          name: "og:description",
+          content: this.$page.keycap.excerpt,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.keycap.excerpt,
+        },
+      ],
+    };
+  },
   components: {
     Lightbox,
   },

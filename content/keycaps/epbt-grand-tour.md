@@ -1,7 +1,7 @@
 ---
 title: ePBT Grand Tour
 date: 2020-08-13
-excerpt: This set is inspired from a NASA artwork
+excerpt: ePBT Grand Tour set is inspired from a NASA artwork
 featuredImage: ./images/grandtour/grandtour_featured.jpg
 kits: 
     - {name: Faster Than Light, image: ./images/grandtour/kits/grandtour_base.jpg}

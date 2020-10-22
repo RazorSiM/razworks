@@ -123,6 +123,18 @@ import ProjectSmall from "../components/ProjectSmall";
 export default {
   metaInfo: {
     title: "Home",
+    meta: [
+      {
+        key: "og:title",
+        name: "og:title",
+        content: "Raz.WORKS - Home",
+      },
+      {
+        key: "twitter:title",
+        name: "twitter:title",
+        content: "Raz.WORKS - Home",
+      },
+    ],
   },
   components: {
     Shell,

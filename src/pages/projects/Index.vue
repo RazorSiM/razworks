@@ -47,6 +47,36 @@ query {
 <script>
 import ProjectSmall from "../../components/ProjectSmall";
 export default {
+  metaInfo: {
+    title: "Projects",
+    meta: [
+      {
+        key: "og:title",
+        name: "og:title",
+        content: "Raz.WORKS - Projects",
+      },
+      {
+        key: "twitter:title",
+        name: "twitter:title",
+        content: "Raz.WORKS - Projects",
+      },
+      {
+        key: "description",
+        name: "description",
+        content: "Raz.WORKS - Checkout my past and ongoing projects!",
+      },
+      {
+        key: "og:description",
+        name: "og:description",
+        content: "Raz.WORKS - Checkout my past and ongoing projects!",
+      },
+      {
+        key: "twitter:description",
+        name: "twitter:description",
+        content: "Raz.WORKS - Checkout my past and ongoing projects!",
+      },
+    ],
+  },
   components: {
     ProjectSmall,
   },

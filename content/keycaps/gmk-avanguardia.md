@@ -3,7 +3,7 @@ title: GMK Avanguardia
 logo: ./images/avanguardia/avanguardia_logo.png
 date: 2020-04-26
 featuredImage: ./images/avanguardia/boards/m60_1.jpg
-excerpt: A GMK set inspired to the minimalistic art of Kandinsky
+excerpt: GMK Avanguardia is a set inspired to the minimalistic art of Kandinsky with a futuristic twist
 kits:
   - {
       name: Minimalistico,
