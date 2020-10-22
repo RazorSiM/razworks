@@ -6,6 +6,7 @@
         v-if="social.url"
         :href="social.url"
         :key="index"
+        target="_blank"
       >
         <svg
           class="fill-current w-5 md:w-10 h-auto"
@@ -16,13 +17,16 @@
           <title>social.name</title>
           <path :d="social.icon"></path>
         </svg>
-        <i class="font-dankit text-sm">{{ social.title }}</i>
+        <i class="font-dankit text-sm" @click="doCopy(social.title)">{{
+          social.title
+        }}</i>
       </a>
       <a
         v-else
         class="flex flex-col justify-center items-center text-accent-url transition-all duration-100"
         @click="doCopy(social.title)"
         :key="index"
+        target="_blank"
       >
         <svg
           class="fill-current w-5 md:w-10 h-auto"
