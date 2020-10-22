@@ -57,14 +57,14 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     name: "twitter:image",
     content: "/socialShare.jpg",
   });
-  router.beforeEach((to, _from, next) => {
-    head.meta.push({
-      key: "og:url",
-      name: "og:url",
-      content: process.env.GRIDSOME_WEBSITE_URL + to.path,
-    });
-    next();
-  });
+  // router.beforeEach((to, _from, next) => {
+  //   head.meta.push({
+  //     key: "og:url",
+  //     name: "og:url",
+  //     content: process.env.GRIDSOME_WEBSITE_URL + to.path,
+  //   });
+  //   next();
+  // });
   Vue.use(Vuex);
   Vue.use(VueClipboard);
   appOptions.store = new Vuex.Store({
