@@ -28,6 +28,13 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        typeName: "About",
+        path: "content/pages/about.md",
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         path: "content/keycaps/*.md",
         typeName: "Keycap",
         resolveAbsolutePaths: true,

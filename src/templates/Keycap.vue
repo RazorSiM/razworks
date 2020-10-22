@@ -132,6 +132,7 @@
 <page-query>
 query ($id: ID!) {
   keycap(id: $id) {
+    path
     title
     date
     logo (width: 250)
@@ -195,6 +196,11 @@ export default {
           key: "og:image",
           name: "og:image",
           content: this.$page.keycap.featuredImage,
+        },
+        {
+          key: "og:url",
+          name: "og:url",
+          content: "https://raz.works" + this.$page.keycap.path,
         },
       ],
     };

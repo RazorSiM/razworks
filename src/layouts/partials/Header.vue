@@ -9,6 +9,7 @@
         </strong>
         <nav class="nav h-full flex items-center">
           <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/about">About</g-link>
           <g-link class="nav__link" to="/projects">Projects</g-link>
         </nav>
       </div>
@@ -22,7 +23,7 @@
           <button
             class="px-4 rounded inline-flex items-center bg-background-highlight"
           >
-            <span class="mr-1">{{ selectedTheme }}</span>
+            <span class="mr-1">🐧 {{ selectedTheme }}</span>
             <svg
               class="fill-current h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +67,7 @@ query {
 export default {
   data() {
     return {
-      themes: ["dracula", "nord", "avanguardia", "bow", "wob"],
+      themes: ["dracula", "nord", "bow", "wob"],
       selectedTheme: "",
       themeMenu: false,
     };

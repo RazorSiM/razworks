@@ -75,6 +75,11 @@ export default {
         name: "twitter:description",
         content: "Raz.WORKS - Checkout my past and ongoing projects!",
       },
+      {
+        key: "og:url",
+        name: "og:url",
+        content: "https://raz.works/projects",
+      },
     ],
   },
   components: {
