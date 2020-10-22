@@ -10,10 +10,10 @@ kits:
     - {name: Engine Room, image: ./images/grandtour/kits/grandtour_40.jpg}
 renders: 
  [
-     {name: Rama u80, images: [./images/grandtour/boards/u80_1.png]},
-     {name: TGR Alice, images: [./images/grandtour/boards/alice_1.jpg, ./images/grandtour/boards/alice_2.png ]},
-     {name: Pizza Keyboard, images: [./images/grandtour/boards/pizza_1.png]},
-     {name: Nasu, images: [./images/grandtour/boards/nasu_1.png]}
+     {name: Rama u80, images: [./images/grandtour/boards/u80_1.jpg]},
+     {name: TGR Alice, images: [./images/grandtour/boards/alice_1.jpg, ./images/grandtour/boards/alice_2.jpg ]},
+     {name: Pizza Keyboard, images: [./images/grandtour/boards/pizza_1.jpg]},
+     {name: Nasu, images: [./images/grandtour/boards/nasu_1.jpg]}
  ]
 ---
 # ePBT Grand Tour by FEDEMITO
