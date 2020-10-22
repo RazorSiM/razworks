@@ -195,7 +195,7 @@ export default {
         {
           key: "og:image",
           name: "og:image",
-          content: this.$page.keycap.featuredImage,
+          content: "https://raz.works" + this.$page.keycap.featuredImage.src,
         },
         {
           key: "og:url",

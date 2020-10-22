@@ -63,16 +63,18 @@
           </div>
         </shell>
       </div>
-      <h2 class="text-4xl font-bold mb-6">Latest Projects</h2>
-      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-6">
-        <project-small
-          v-for="edge in $page.keycaps.edges"
-          :key="'keycap' + edge.node.id"
-          :title="edge.node.title"
-          :image="edge.node.featuredImage"
-          :excerpt="edge.node.excerpt"
-          :url="edge.node.path"
-        ></project-small>
+      <div class="latest-projects mb-16">
+        <h2 class="text-4xl font-bold mb-6">Latest Projects</h2>
+        <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-6">
+          <project-small
+            v-for="edge in $page.keycaps.edges"
+            :key="'keycap' + edge.node.id"
+            :title="edge.node.title"
+            :image="edge.node.featuredImage"
+            :excerpt="edge.node.excerpt"
+            :url="edge.node.path"
+          ></project-small>
+        </div>
       </div>
 
       <div class="featured-works">
