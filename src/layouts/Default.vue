@@ -1,15 +1,15 @@
 <template>
   <div class="layout font-dank pb-32" :class="theme">
     <Header></Header>
-    <!-- <div class="container mx-auto px-4 md:px-16"> -->
-    <slot />
+    <transition name="fade" appear>
+      <slot />
+    </transition>
     <div
       v-if="copy"
       class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
     >
       🤖 Item in your Clipboard
     </div>
-    <!-- </div> -->
   </div>
 </template>
 
@@ -61,5 +61,12 @@ a {
 a:hover {
   @apply underline;
   @apply text-accent-tag;
+}
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 </style>
