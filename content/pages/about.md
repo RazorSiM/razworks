@@ -1,6 +1,6 @@
 # About me
 
-No much to say, really. I'm Simone from Italy (better known online as **Raz**) and I am a freelancer **web designer** & *mostly* **Frontend developer**. I have a strong passion for tech in general and I am an *old* gamer (by the actual standards 🧓) - I love the **rogue like** genre, **arcade**, **hack'n'slash**(Diablo, anyone?) and obviously the goods olds **FPS** like CS, COD (yeah, COD is getting better).
+No much to say, really. I'm Simone from Italy (better known online as **Raz**) and I am a freelancer **web designer** & *mostly* **Frontend developer**. I have a strong passion for tech in general and I am an *old* gamer (by the actual standards 🧓) - I love the **rogue like** genre, **arcade**, **hack'n'slash** (Diablo, anyone?) and obviously the goods olds **FPS** like CS, COD (yeah, COD is getting better).
 
 Let's jump to the question I'll eventually have to answer:
 > Why keyboards and keycaps?
