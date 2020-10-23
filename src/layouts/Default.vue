@@ -45,10 +45,8 @@ export default {
 </script>
 <style>
 .layout {
-  @apply h-full;
+  min-height: 100vh;
   @apply w-full;
-  @apply fixed;
-  @apply overflow-y-auto;
   @apply bg-background-base;
   @apply text-text-foreground;
   @apply transition-all;

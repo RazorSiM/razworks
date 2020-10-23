@@ -97,8 +97,8 @@ export default {
   @apply underline;
 }
 .active--exact {
-  @apply underline;
-  @apply bg-background-highlight;
+  @apply bg-background-selection;
   @apply rounded-sm;
+  @apply font-bold;
 }
 </style>
