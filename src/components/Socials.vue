@@ -7,6 +7,7 @@
         :href="social.url"
         :key="index"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <svg
           class="fill-current w-5 md:w-10 h-auto"
@@ -27,6 +28,7 @@
         @click="doCopy(social.title)"
         :key="index"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <svg
           class="fill-current w-5 md:w-10 h-auto"
