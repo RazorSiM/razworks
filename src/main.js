@@ -3,7 +3,6 @@
 
 import Vuex from "vuex";
 import VueClipboard from "vue-clipboard2";
-import BackToTop from "vue-backtotop";
 import DefaultLayout from "~/layouts/Default.vue";
 
 import "./assets/css/themes.css";
@@ -11,7 +10,6 @@ import "./assets/css/themes.css";
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex);
   Vue.use(VueClipboard);
-  Vue.use(BackToTop);
   appOptions.store = new Vuex.Store({
     state: {
       theme: "dracula",

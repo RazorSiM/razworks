@@ -5,11 +5,7 @@
       <slot />
     </transition>
     <Footer class=""></Footer>
-    <back-to-top bottom="50px" right="50px">
-      <button class="text-3xl bg-background-selection p-2 rounded-lg">
-        🔝
-      </button>
-    </back-to-top>
+    <go-top></go-top>
     <div
       v-if="copy"
       class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
