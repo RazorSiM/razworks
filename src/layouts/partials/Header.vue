@@ -187,7 +187,7 @@ export default {
         "solarized-light",
         "material",
         "vivid",
-        "guthub",
+        "github",
         "green-screen",
         "icy",
         "monokai",
