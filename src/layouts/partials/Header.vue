@@ -1,18 +1,15 @@
 <template>
   <header class="header w-full p-3">
-    <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
-    <nav class="bg-gray-800">
+    <nav class="bg-background-lighter">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+              class="inline-flex items-center justify-center p-2 rounded-md text-background-highlight hover:text-accent-var hover:bg-background-highlight focus:outline-none focus:bg-background-highlight focus:text-accent-class transition duration-150 ease-in-out"
               aria-label="Main menu"
               aria-expanded="false"
+              @click.stop="navMenu = !navMenu"
             >
               <!-- Icon when menu is closed. -->
               <!--
@@ -21,6 +18,7 @@
             Menu open: "hidden", Menu closed: "block"
           -->
               <svg
+                v-if="navMenu === false"
                 class="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -41,7 +39,8 @@
             Menu open: "block", Menu closed: "hidden"
           -->
               <svg
-                class="hidden h-6 w-6"
+                v-if="navMenu === true"
+                class="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -62,78 +61,66 @@
             <div class="flex-shrink-0">
               <img
                 class="block lg:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-on-dark.svg"
+                src="../../assets/images/razlogo.png"
                 alt="Workflow logo"
               />
               <img
                 class="hidden lg:block h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-logo-on-dark.svg"
+                src="../../assets/images/razlogo.png"
                 alt="Workflow logo"
               />
             </div>
             <div class="hidden sm:block sm:ml-6">
               <div class="flex">
-                <a
-                  href="#"
-                  class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Dashboard</a
-                >
-                <a
-                  href="#"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Team</a
-                >
-                <a
-                  href="#"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Projects</a
-                >
-                <a
-                  href="#"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >Calendar</a
-                >
+                <g-link
+                  to="/"
+                  class="px-3 py-2 rounded text-sm font-medium leading-5 text-text-foreground focus:outline-none hover:bg-background-highlight transition duration-150 ease-in-out"
+                  >Home
+                </g-link>
+                <g-link
+                  to="/about/"
+                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  >About
+                </g-link>
+                <g-link
+                  to="/projects/"
+                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  >Projects
+                </g-link>
               </div>
             </div>
           </div>
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
-            <button
-              class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-              aria-label="Notifications"
-            >
-              <!-- Heroicon name: bell -->
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-            </button>
-
-            <!-- Profile dropdown -->
+            <!-- Theme dropdown -->
             <div class="ml-3 relative">
               <div>
                 <button
-                  class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out"
+                  class="p-1 flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-accent-class transition duration-150 ease-in-out"
                   id="user-menu"
                   aria-label="User menu"
                   aria-haspopup="true"
+                  @click.stop="themeMenu = !themeMenu"
                 >
-                  <img
-                    class="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
+                  <svg
+                    class="w-6 h-6 mx-1 text-accent-var"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                    ></path>
+                  </svg>
+                  <span class="mx-1">{{
+                    selectedTheme.charAt(0).toUpperCase() +
+                    selectedTheme.slice(1)
+                  }}</span>
                 </button>
               </div>
               <!--
@@ -147,31 +134,24 @@
               To: "transform opacity-0 scale-95"
           -->
               <div
-                class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg"
+                v-if="themeMenu"
+                class="block origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg"
+                v-click-outside="hideTheme"
               >
                 <div
-                  class="py-1 rounded-md bg-white shadow-xs"
+                  class="py-1 rounded-md bg-background-selection shadow-xs"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="user-menu"
                 >
                   <a
+                    v-for="(theme, index) in themes"
+                    :key="'theme-' + index"
+                    @click="setTheme(theme)"
                     href="#"
-                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                    class="block px-4 py-2 text-sm leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:bg-background-highlight transition duration-150 ease-in-out"
                     role="menuitem"
-                    >Your Profile</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                    role="menuitem"
-                    >Settings</a
-                  >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                    role="menuitem"
-                    >Sign out</a
+                    >{{ theme.charAt(0).toUpperCase() + theme.slice(1) }}</a
                   >
                 </div>
               </div>
@@ -185,85 +165,26 @@
 
     Menu open: "block", Menu closed: "hidden"
   -->
-      <div class="hidden sm:hidden">
+      <div v-if="navMenu" v-click-outside="hideNav">
         <div class="px-2 pt-2 pb-3">
-          <a
-            href="#"
-            class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Dashboard</a
-          >
-          <a
-            href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Team</a
-          >
-          <a
-            href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Projects</a
-          >
-          <a
-            href="#"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >Calendar</a
-          >
+          <g-link
+            to="/"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-text-foreground hover:bg-background-highlight focus:outline-none transition duration-150 ease-in-out"
+            >Home
+          </g-link>
+          <g-link
+            to="/about/"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-text-foreground hover:bg-background-highlight focus:outline-none transition duration-150 ease-in-out"
+            >About
+          </g-link>
+          <g-link
+            to="/projects/"
+            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-text-foreground hover:bg-background-highlight focus:outline-none transition duration-150 ease-in-out"
+            >Projects
+          </g-link>
         </div>
       </div>
     </nav>
-    <!-- <div
-      class="bg-background-lighter px-3 py-2 h-full sm:h-10 rounded-md flex flex-wrap items-center justify-between"
-    >
-      <div class="flex items-center">
-        <strong class="mr-5 break-word">
-          {{ $static.metadata.siteName }}
-        </strong>
-        <nav class="nav h-full flex items-center">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/about">About</g-link>
-          <g-link class="nav__link" to="/projects">Projects</g-link>
-        </nav>
-      </div>
-
-      <div class="justify-self-end">
-        <div
-          class="dropdown inline-block relative"
-          @mouseover="themeMenu = true"
-          @mouseleave="themeMenu = false"
-        >
-          <button
-            class="px-4 rounded inline-flex items-center bg-background-highlight"
-          >
-            <span class="mr-1">🐧 {{ selectedTheme }}</span>
-            <svg
-              class="fill-current h-4 w-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-              />
-            </svg>
-          </button>
-          <ul
-            class="dropdown-menu absolute pt-1 right-0 z-10"
-            :class="{ hidden: !themeMenu }"
-          >
-            <li
-              v-for="(theme, index) in themes"
-              :key="'theme' + index"
-              @click="setTheme(theme)"
-              class="cursor-pointer"
-            >
-              <span
-                class="bg-background-lighter hover:bg-background-selection py-2 px-4 block whitespace-no-wrap"
-                href="#"
-                >{{ theme }}</span
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
   </header>
 </template>
 <static-query>
@@ -274,12 +195,14 @@ query {
 }
 </static-query>
 <script>
+import ClickOutside from "vue-click-outside";
 export default {
   data() {
     return {
       themes: ["dracula", "nord", "bow", "wob"],
       selectedTheme: "",
       themeMenu: false,
+      navMenu: false,
     };
   },
   mounted() {
@@ -291,24 +214,22 @@ export default {
       localStorage.setItem("theme", theme);
       this.selectedTheme = theme;
     },
+    hideTheme() {
+      this.themeMenu = false;
+    },
+    hideNav() {
+      this.navMenu = false;
+    },
+  },
+  directives: {
+    ClickOutside,
   },
 };
 </script>
 <style>
-.nav__link {
-  @apply px-1;
-  @apply transition-all;
-  @apply duration-200;
-  @apply block;
-}
-.nav__link:hover {
-  @apply font-dankit;
-  @apply text-accent-url;
-  @apply underline;
-}
 .active--exact {
   @apply bg-background-selection;
-  @apply rounded-sm;
+  @apply rounded;
   @apply font-bold;
 }
 </style>
