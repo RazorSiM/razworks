@@ -83,10 +83,10 @@
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
             <!-- Theme dropdown -->
-            <div class="ml-3 relative">
+            <div class="ml-3 relative z-50">
               <div>
                 <button
-                  class="p-1 flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-accent-class transition duration-150 ease-in-out"
+                  class="p-1 flex text-sm border-2 border-background-selection hover:bg-background-selection rounded-full focus:outline-none focus:border-accent-class transition duration-150 ease-in-out"
                   id="user-menu"
                   aria-label="User menu"
                   aria-haspopup="true"
@@ -115,7 +115,7 @@
 
               <div
                 v-if="themeMenu"
-                class="block origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg"
+                class="block origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg max-h-400px overflow-y-auto"
                 v-click-outside="hideTheme"
               >
                 <div
@@ -174,11 +174,41 @@ import ClickOutside from "vue-click-outside";
 export default {
   data() {
     return {
-      themes: ["dracula", "nord", "bow", "wob"],
+      themes: [
+        "dracula",
+        "ocean",
+        "onedark",
+        "sakura",
+        "rebecca",
+        "nord",
+        "palenight",
+        "ashes",
+        "solarized-dark",
+        "solarized-light",
+        "material",
+        "vivid",
+        "guthub",
+        "green-screen",
+        "icy",
+        "monokai",
+        "mocha",
+        "fruit-soda",
+        "codeschool",
+        "cupertino",
+        "flat",
+        "brogrammer",
+        "google-dark",
+        "google-light",
+        "bow",
+        "wob",
+      ],
       selectedTheme: "",
       themeMenu: false,
       navMenu: false,
     };
+  },
+  created() {
+    this.themes.sort();
   },
   mounted() {
     this.selectedTheme = this.$store.state.theme;

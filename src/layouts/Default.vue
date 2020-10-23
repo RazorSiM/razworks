@@ -5,7 +5,6 @@
       <slot />
     </transition>
     <Footer class=""></Footer>
-    <go-top></go-top>
     <div
       v-if="copy"
       class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
