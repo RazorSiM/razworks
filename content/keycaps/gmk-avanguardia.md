@@ -48,8 +48,9 @@ renders:
 
 # GMK Avanguardia
 
-- Link to the IC FORM:https://forms.gle/CvNgVBDoBvLn8xhx7
-- Link to the Discord Server: https://discord.gg/MrdRDzy
+- Link to the [IC FORM](https://forms.gle/CvNgVBDoBvLn8xhx7)
+- Link to the [Discord Server](https://discord.gg/MrdRDzy)
+- Link to [Geekhack](https://geekhack.org/index.php?topic=105981.0)
 
 ## Updates
 

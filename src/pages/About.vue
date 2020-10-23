@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div
-      class="prose lg:prose-xl mx-auto"
+      class="prose lg:prose-xl mx-auto px-4"
       v-html="$page.about.edges[0].node.content"
     ></div>
     <div class="flex justify-center">
