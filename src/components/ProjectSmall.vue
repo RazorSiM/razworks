@@ -1,8 +1,8 @@
 <template>
-  <div class="shadow-xl">
+  <div class="shadow-xl flex flex-col">
     <h3 class="font-bold text-xl text-accent-string">{{ title }}</h3>
     <g-image :alt="title" :src="image" class=""></g-image>
-    <div class="p-3">
+    <div class="p-3 flex flex-col flex-1 justify-between">
       <p>{{ excerpt }}</p>
 
       <g-link

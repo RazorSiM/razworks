@@ -171,7 +171,7 @@ export default {
         {
           key: "twitter:card",
           name: "twitter:card",
-          content: "summary",
+          content: "summary_large_image",
         },
         {
           key: "twitter:site",
@@ -206,7 +206,7 @@ export default {
         {
           key: "og:type",
           name: "og:type",
-          content: "website",
+          content: "article",
         },
         {
           key: "og:title",

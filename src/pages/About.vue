@@ -36,7 +36,7 @@ export default {
       {
         key: "twitter:card",
         name: "twitter:card",
-        content: "summary",
+        content: "summary_large_image",
       },
       {
         key: "twitter:site",
@@ -72,6 +72,11 @@ export default {
         key: "twitter:image:alt",
         name: "twitter:image:alt",
         content: "Raz.WORKS render",
+      },
+      {
+        key: "og:type",
+        name: "og:type",
+        content: "article",
       },
       {
         key: "og:title",
