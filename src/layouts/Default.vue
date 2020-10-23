@@ -1,9 +1,15 @@
 <template>
-  <div class="layout font-dank pb-32" :class="theme">
-    <Header></Header>
+  <div class="layout font-dank flex flex-col justify-between" :class="theme">
+    <main-nav></main-nav>
     <transition name="fade" appear>
       <slot />
     </transition>
+    <Footer class=""></Footer>
+    <back-to-top bottom="50px" right="50px">
+      <button class="text-3xl bg-background-selection p-2 rounded-lg">
+        🔝
+      </button>
+    </back-to-top>
     <div
       v-if="copy"
       class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
@@ -14,11 +20,13 @@
 </template>
 
 <script>
-import Header from "./partials/Header";
+import MainNav from "./partials/Header";
+import Footer from "./partials/Footer";
 
 export default {
   components: {
-    Header,
+    MainNav,
+    Footer,
   },
   computed: {
     theme() {

@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <div class="projects px-4">
-      <div class="prose mb-10 mx-auto">
+    <div class="projects px-4 pt-24">
+      <div class="prose lg:prose-xl mb-20 mx-auto">
         <h1 class="text-4xl font-bold">Projects</h1>
         <p>
           These are past and ongoing projects I worked on. Keep in mind not all

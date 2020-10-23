@@ -1,19 +1,19 @@
 <template>
-  <footer class="footer">
-    <strong>
-      <g-link to="/" class="text-accent-var">{{
-        $static.metadata.siteName
-      }}</g-link>
-    </strong>
-    <nav class="nav">
-      <g-link class="nav__link" to="/">Home</g-link>
-      <g-link class="nav__link" to="/portfolio">Portfolio</g-link>
-      <select class="theme-selector" v-model="selTheme">
-        <option v-for="(theme, index) in themes" :key="index">
-          {{ theme }}
-        </option>
-      </select>
-    </nav>
+  <footer
+    class="footer w-full flex items-center justify-center pt-32 pb-4 px-4"
+  >
+    <div class="flex flex-col">
+      <p class="text-center">
+        Made by 👽 and 👾 with the help of
+        <g-link to="/about/">myself</g-link> - this website uses
+        <g-link to="https://gridsome.org">Gridsome</g-link> under the hood!
+      </p>
+      <div class="flex justify-center">
+        <socials
+          class="my-5 w-full grid grid-flow-col gap-4 justify-center"
+        ></socials>
+      </div>
+    </div>
   </footer>
 </template>
 <static-query>
@@ -24,59 +24,17 @@ query {
 }
 </static-query>
 <script>
+import Socials from "../../components/Socials";
 export default {
+  components: {
+    Socials,
+  },
   data() {
     return {
       themes: ["dracula", "nord"],
       selTheme: "",
     };
   },
-  watch: {
-    selTheme: function () {
-      this.setTheme();
-    },
-  },
-  mounted() {
-    this.selTheme = this.$store.state.theme;
-  },
-  methods: {
-    setTheme() {
-      this.$store.commit("setTheme", this.selTheme);
-      localStorage.setItem("theme", this.selTheme);
-    },
-  },
 };
 </script>
-<style>
-.footer {
-  @apply w-full;
-  @apply flex;
-  @apply items-center;
-  @apply justify-around;
-  @apply h-16;
-}
-.nav__link {
-  @apply mx-2;
-  @apply px-2;
-  @apply transition-all;
-  @apply duration-200;
-}
-.nav__link:hover {
-  @apply font-dankit;
-  @apply text-accent-url;
-  @apply underline;
-}
-.theme-selector {
-  @apply bg-background-base;
-  @apply border-b-2;
-  @apply border-text-foreground;
-  @apply text-text-foreground;
-  @apply transition-all;
-  @apply duration-100;
-}
-.theme-selector:focus {
-  @apply border-b-2;
-  @apply border-accent-class;
-  @apply outline-none;
-}
-</style>
+<style></style>

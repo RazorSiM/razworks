@@ -1,13 +1,15 @@
 <template>
   <Layout>
-    <div
-      class="prose lg:prose-xl mx-auto px-4"
-      v-html="$page.about.edges[0].node.content"
-    ></div>
-    <div class="flex justify-center">
-      <socials
-        class="my-5 w-full grid grid-flow-col gap-4 justify-center"
-      ></socials>
+    <div>
+      <div
+        class="prose lg:prose-xl mx-auto px-4 pt-24"
+        v-html="$page.about.edges[0].node.content"
+      ></div>
+      <div class="flex justify-center">
+        <socials
+          class="my-5 w-full grid grid-flow-col gap-4 justify-center"
+        ></socials>
+      </div>
     </div>
   </Layout>
 </template>

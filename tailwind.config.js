@@ -372,6 +372,8 @@ module.exports = {
       ],
     },
     fontSize: {
+      "logo-small": "5px",
+      "logo-medium": "8px",
       xs: "0.75rem",
       sm: "0.875rem",
       base: "1rem",
