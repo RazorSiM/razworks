@@ -36,8 +36,7 @@ renders:
     { name: TGR Alice, images: [./images/modernjapanesedesko/boards/6.jpg] },
     { name: Famous TKL, images: [./images/modernjapanesedesko/boards/3.jpg] },
     { name: TGR 910, images: [./images/modernjapanesedesko/boards/7.jpg] },
-    { name: Synth, images: [./images/modernjapanesedesko/boards/10.jpg, ./images/modernjapanesedesko/boards/11.jpg, ./images/modernjapanesedesko/boards/12.jpg ] },
-    { name: Rama U80, images: [./images/modernjapanesedesko/boards/9.jpg] },
+    { name: Synth, images: [./images/modernjapanesedesko/boards/10.jpg, ./images/modernjapanesedesko/boards/11.jpg, ./images/modernjapanesedesko/boards/12.jpg ] }
     
   ]
 ---
