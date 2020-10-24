@@ -57,6 +57,7 @@ export default {
       localStorage.setItem("theme", "dracula");
     } else {
       this.$store.commit("setTheme", localStorage.getItem("theme"));
+      localStorage.setItem("theme", this.storeTheme);
     }
   },
 };

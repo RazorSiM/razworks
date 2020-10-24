@@ -3,7 +3,7 @@
     <nav class="bg-background-lighter rounded-lg">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div class="inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
               class="inline-flex items-center justify-center p-2 rounded-md text-background-highlight hover:text-accent-var hover:bg-background-highlight focus:outline-none focus:bg-background-highlight focus:text-accent-class transition duration-150 ease-in-out"
@@ -45,9 +45,9 @@
             </button>
           </div>
           <div
-            class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+            class="flex items-center justify-center sm:items-stretch sm:justify-start"
           >
-            <div class="flex-shrink-0">
+            <div class="">
               <img
                 class="block lg:hidden h-10 w-auto"
                 src="../../assets/images/razlogo.png"
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            class="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
             <!-- Theme dropdown -->
             <div class="ml-3 relative z-50">
@@ -93,7 +93,7 @@
                   @click.stop="themeMenu = !themeMenu"
                 >
                   <svg
-                    class="w-6 h-6 mx-1 text-accent-var"
+                    class="w-6 h-6 ml-1 text-accent-var"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
