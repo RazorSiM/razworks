@@ -23,12 +23,17 @@ export default {
     MainNav,
     Footer,
   },
+  data() {
+    return {
+      theme: this.$store.state.theme,
+    };
+  },
   computed: {
-    theme() {
-      return this.$store.state.theme;
-    },
     copy() {
       return this.$store.state.copy;
+    },
+    storeTheme() {
+      return this.$store.state.theme;
     },
   },
   methods: {
@@ -42,8 +47,18 @@ export default {
         this.stopCopy();
       }, 2000);
     },
+    storeTheme() {
+      this.theme = this.$store.state.theme;
+    },
   },
-  mounted() {},
+  mounted() {
+    if (!localStorage.getItem("theme")) {
+      this.$store.commit("setTheme", "dracula");
+      localStorage.setItem("theme", "dracula");
+    } else {
+      this.$store.commit("setTheme", localStorage.getItem("theme"));
+    }
+  },
 };
 </script>
 <style>

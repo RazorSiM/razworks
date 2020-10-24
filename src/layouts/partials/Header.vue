@@ -127,7 +127,7 @@
                   <a
                     v-for="(theme, index) in themes"
                     :key="'theme-' + index"
-                    @click="setTheme(theme)"
+                    @click.stop="setTheme(theme)"
                     href="#"
                     class="block px-4 py-2 text-sm leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:bg-background-highlight transition duration-150 ease-in-out"
                     role="menuitem"
@@ -207,11 +207,15 @@ export default {
       navMenu: false,
     };
   },
-  created() {
-    this.themes.sort();
+  computed: {
+    storeTheme() {
+      return this.$store.state.theme;
+    },
   },
-  mounted() {
-    this.selectedTheme = this.$store.state.theme;
+  watch: {
+    storeTheme() {
+      this.selectedTheme = this.storeTheme;
+    },
   },
   methods: {
     setTheme(theme) {
@@ -226,6 +230,11 @@ export default {
       this.navMenu = false;
     },
   },
+  mounted() {
+    this.themes.sort();
+    this.selectedTheme = this.selectedTheme;
+  },
+
   directives: {
     ClickOutside,
   },
