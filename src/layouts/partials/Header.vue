@@ -232,7 +232,7 @@ export default {
   },
   mounted() {
     this.themes.sort();
-    this.selectedTheme = this.selectedTheme;
+    this.selectedTheme = this.storeTheme;
   },
 
   directives: {
