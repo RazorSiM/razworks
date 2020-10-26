@@ -7,7 +7,7 @@
           command="./init.sh"
           distroTitle="Arch Linux"
           :distroIcon="distroIcon"
-          class="w-full shadow-xl"
+          class="w-full shadow-2xl"
         >
           <command
             command="./intro.sh"

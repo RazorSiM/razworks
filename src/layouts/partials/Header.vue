@@ -1,7 +1,7 @@
 <template>
   <header class="w-full p-3 header">
     <nav
-      class="shadow-3xl bg-background-lighter"
+      class="shadow-2xl bg-background-lighter"
       :class="{ 'rounded-lg': navMenu, 'rounded-full': !navMenu }"
     >
       <div class="px-2 mx-auto sm:px-6 lg:px-8">
