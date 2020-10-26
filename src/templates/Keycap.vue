@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="mb-10 keycap">
-      <div class="relative hero">
+      <div class="relative shadow-2xl hero">
         <g-image
           v-if="$page.keycap.featuredImage !== null"
           :src="$page.keycap.featuredImage"
