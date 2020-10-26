@@ -7,7 +7,7 @@
           command="./init.sh"
           distroTitle="Arch Linux"
           :distroIcon="distroIcon"
-          class="w-full shadow-xl border-background-lighter"
+          class="w-full shadow-xl"
         >
           <command
             command="./intro.sh"
@@ -86,19 +86,19 @@
       <div class="featured-works">
         <h3 class="mb-4 text-2xl font-bold text-right">🌟Some of my works!</h3>
         <div
-          class="grid grid-flow-col-dense grid-cols-4 grid-rows-3 gap-1 image-grid"
+          class="grid grid-flow-col-dense grid-cols-4 grid-rows-3 gap-1 md:grid-cols-4 sm:gap-2 md:gap-4 image-grid"
         >
           <template v-for="(img, index) in $page.home.edges[0].node.bestImages">
             <div
               :key="'' + index"
-              class="shadow-2xl bg-background-lighter hover:cursor-pointer"
+              class="rounded-md shadow-2xl bg-background-lighter hover:cursor-pointer"
               :class="{ 'col-span-3 row-span-3': index === 0 }"
             >
               <g-image
                 v-if="img.image !== null"
                 :alt="img.name"
                 :src="img.image"
-                class="object-cover w-full h-full"
+                class="object-cover w-full h-full rounded-md"
                 @click="
                   lightboxImage = img.image;
                   showLightbox = true;

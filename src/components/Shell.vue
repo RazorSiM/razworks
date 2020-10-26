@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 rounded-md shell">
+  <div class="p-3 rounded-xl sm:p-5 md:p-8 xl:p-12 shell">
     <div
       class="flex items-center justify-between h-8 rounded-full shell__header bg-background-lighter"
     >
