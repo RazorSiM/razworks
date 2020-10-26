@@ -1,8 +1,11 @@
 <template>
   <header class="w-full p-3 header">
-    <nav class="rounded-lg bg-background-lighter">
-      <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
+    <nav
+      class="shadow-3xl bg-background-lighter"
+      :class="{ 'rounded-lg': navMenu, 'rounded-full': !navMenu }"
+    >
+      <div class="px-2 mx-auto sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between py-1">
           <div class="inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button

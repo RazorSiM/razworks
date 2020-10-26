@@ -10,6 +10,30 @@ module.exports = {
   icon: "./src/assets/images/razlogo.png",
   plugins: [
     {
+      use: "gridsome-plugin-robots-txt",
+      options: {
+        host: "http://raz.works",
+        sitemap: "https://raz.works/sitemap.xml",
+        policy: [
+          {
+            userAgent: "Googlebot",
+            allow: "/",
+            disallow: "/search",
+            crawDelay: 2,
+          },
+          {
+            userAgent: "*",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 10,
+          },
+        ],
+      },
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+    },
+    {
       use: "gridsome-plugin-tailwindcss",
     },
     {
