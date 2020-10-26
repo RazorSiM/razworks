@@ -5,8 +5,11 @@
     <div class="flex flex-col">
       <p class="text-center">
         Made by 👽 and 👾 with the help of
-        <g-link to="/about/">myself</g-link> - this website uses
-        <g-link to="https://gridsome.org">Gridsome</g-link> under the hood!
+        <g-link to="/about/">myself</g-link> - this is built on
+        <g-link to="https://vuejs.org">Vue</g-link> with
+        <g-link to="https://gridsome.org">Gridsome</g-link> and
+        <g-link to="https://tailwindcss.com">TailwindCSS</g-link> under the hood
+        🐱‍👤
       </p>
       <div class="flex justify-center">
         <socials

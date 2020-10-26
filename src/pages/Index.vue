@@ -75,8 +75,8 @@
             :url="edge.node.path"
           ></project-small>
         </div>
-        <div class="flex justify-end w-full mt-3">
-          <g-link class="text-2xl" to="/projects/">See all ⏩</g-link>
+        <div class="flex justify-end w-full mt-10">
+          <g-link class="text-2xl font-bold" to="/projects/">See all ⏩</g-link>
         </div>
       </div>
 
