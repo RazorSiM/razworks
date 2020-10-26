@@ -91,7 +91,7 @@
           <template v-for="(img, index) in $page.home.edges[0].node.bestImages">
             <div
               :key="'' + index"
-              class="bg-background-lighter"
+              class="shadow-2xl bg-background-lighter hover:cursor-pointer"
               :class="{ 'col-span-3 row-span-3': index === 0 }"
             >
               <g-image
