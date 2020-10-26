@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- prettier-ignore -->
-    <div class="w-full flex flex-col justify-center items-center bg-background-base mt-32 px-4">
+    <div class="flex flex-col items-center justify-center w-full px-4 mt-32 bg-background-base">
     <pre class="text-accent-tag">
     :::     :::::::     :::     
    :+:     :+:   :+:   :+:      

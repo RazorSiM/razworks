@@ -2,7 +2,7 @@
   <div>
     <template v-for="(social, index) in $static.metadata.social">
       <a
-        class="flex flex-col justify-center items-center text-accent-url transition-all duration-100"
+        class="flex flex-col items-center justify-center transition-all duration-100 text-accent-url"
         v-if="social.url"
         :href="social.url"
         :key="index"
@@ -10,7 +10,7 @@
         rel="noopener noreferrer"
       >
         <svg
-          class="fill-current w-5 md:w-10 h-auto"
+          class="w-5 h-auto fill-current md:w-10"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -18,20 +18,20 @@
           <title>social.name</title>
           <path :d="social.icon"></path>
         </svg>
-        <i class="font-dankit text-sm" @click="doCopy(social.title)">{{
+        <i class="text-sm font-dankit" @click="doCopy(social.title)">{{
           social.title
         }}</i>
       </a>
       <a
         v-else
-        class="flex flex-col justify-center items-center text-accent-url transition-all duration-100"
+        class="flex flex-col items-center justify-center transition-all duration-100 text-accent-url"
         @click="doCopy(social.title)"
         :key="index"
         target="_blank"
         rel="noopener noreferrer"
       >
         <svg
-          class="fill-current w-5 md:w-10 h-auto"
+          class="w-5 h-auto fill-current md:w-10"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
           <title>social.name</title>
           <path :d="social.icon"></path>
         </svg>
-        <i class="font-dankit text-sm">{{ social.title }}</i>
+        <i class="text-sm font-dankit">{{ social.title }}</i>
       </a>
     </template>
   </div>

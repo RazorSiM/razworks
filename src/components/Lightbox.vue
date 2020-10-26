@@ -2,20 +2,20 @@
   <Transition name="fade">
     <div
       v-if="showing"
-      class="fixed inset-0 w-screen h-screen flex items-center justify-center bg-smoke-800 z-50"
+      class="fixed inset-0 z-50 flex items-center justify-center w-screen h-screen bg-smoke-800"
       @click.prevent="closeIfShown"
     >
-      <div class="max-h-screen w-full max-w-screen shadow-lg flex">
-        <div class="overflow-auto max-h-screen mx-auto relative">
+      <div class="flex w-full max-h-screen shadow-lg max-w-screen">
+        <div class="relative max-h-screen mx-auto overflow-auto">
           <button
             v-if="showClose"
             aria-label="close"
-            class="absolute top-0 right-0 text-4xl leading-5 p-4 text-gray-500 my-2 mx-10"
+            class="absolute top-0 right-0 p-4 mx-10 my-2 text-4xl leading-5 text-gray-500"
             @click.prevent="close"
           >
             ×
           </button>
-          <g-image :src="image" class="h-full w-auto mx-auto"></g-image>
+          <g-image :src="image" class="w-auto h-full mx-auto"></g-image>
         </div>
       </div>
     </div>

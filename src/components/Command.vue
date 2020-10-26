@@ -1,8 +1,8 @@
 <template>
-  <div class="shell__content__command my-3">
+  <div class="my-3 shell__content__command">
     <p class="text-left">
       <svg
-        class="fill-current h-4 w-auto inline"
+        class="inline w-auto h-4 fill-current"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -10,9 +10,9 @@
         <title>{{ distroTitle }}</title>
         <path :d="distroIcon"></path>
       </svg>
-      <span class="text-accent-class font-bold"> ~ </span>
+      <span class="font-bold text-accent-class"> ~ </span>
       <span class="font-bold">> </span>
-      <span class="text-accent-string font-bold font-dankit">{{
+      <span class="font-bold text-accent-string font-dankit">{{
         command
       }}</span>
     </p>

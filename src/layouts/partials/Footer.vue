@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer w-full flex items-center justify-center pt-32 pb-4 px-4"
+    class="flex items-center justify-center w-full px-4 pt-32 pb-4 footer"
   >
     <div class="flex flex-col">
       <p class="text-center">
@@ -10,7 +10,7 @@
       </p>
       <div class="flex justify-center">
         <socials
-          class="my-5 w-full grid grid-flow-col gap-4 justify-center"
+          class="grid justify-center w-full grid-flow-col gap-4 my-5"
         ></socials>
       </div>
     </div>

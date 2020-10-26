@@ -1,5 +1,5 @@
 <template>
-  <div class="layout font-dank flex flex-col justify-between" :class="theme">
+  <div class="flex flex-col justify-between layout font-dank" :class="theme">
     <main-nav></main-nav>
     <transition name="fade" appear>
       <slot />
@@ -7,7 +7,7 @@
     <Footer class=""></Footer>
     <div
       v-if="copy"
-      class="fixed bottom-0 right-0 m-8 p-3 w-full max-w-sm bg-background-lighter shadow-lg rounded-lg"
+      class="fixed bottom-0 right-0 w-full max-w-sm p-3 m-8 rounded-lg shadow-lg bg-background-lighter"
     >
       🤖 Item in your Clipboard
     </div>

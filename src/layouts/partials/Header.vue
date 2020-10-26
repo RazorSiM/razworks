@@ -1,19 +1,19 @@
 <template>
-  <header class="header w-full p-3">
-    <nav class="bg-background-lighter rounded-lg">
-      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+  <header class="w-full p-3 header">
+    <nav class="rounded-lg bg-background-lighter">
+      <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
-              class="inline-flex items-center justify-center p-2 rounded-md text-background-highlight hover:text-accent-var hover:bg-background-highlight focus:outline-none focus:bg-background-highlight focus:text-accent-class transition duration-150 ease-in-out"
+              class="inline-flex items-center justify-center p-2 transition duration-150 ease-in-out rounded-md text-background-highlight hover:text-accent-var hover:bg-background-highlight focus:outline-none focus:bg-background-highlight focus:text-accent-class"
               aria-label="Main menu"
               aria-expanded="false"
               @click.stop="navMenu = !navMenu"
             >
               <svg
                 v-if="navMenu === false"
-                class="block h-6 w-6"
+                class="block w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -29,7 +29,7 @@
 
               <svg
                 v-if="navMenu === true"
-                class="block h-6 w-6"
+                class="block w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -49,12 +49,12 @@
           >
             <div class="">
               <img
-                class="block lg:hidden h-10 w-auto"
+                class="block w-auto h-10 lg:hidden"
                 src="../../assets/images/razlogo.png"
                 alt="Raz.WORKS logo"
               />
               <img
-                class="hidden lg:block h-10 w-auto"
+                class="hidden w-auto h-10 lg:block"
                 src="../../assets/images/razlogo.png"
                 alt="Raz.WORKS logo"
               />
@@ -63,17 +63,17 @@
               <div class="flex">
                 <g-link
                   to="/"
-                  class="px-3 py-2 rounded text-sm font-medium leading-5 text-text-foreground focus:outline-none hover:bg-background-highlight transition duration-150 ease-in-out"
+                  class="px-3 py-2 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-text-foreground focus:outline-none hover:bg-background-highlight"
                   >Home
                 </g-link>
                 <g-link
                   to="/about/"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700"
                   >About
                 </g-link>
                 <g-link
                   to="/projects/"
-                  class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700"
                   >Projects
                 </g-link>
               </div>
@@ -83,10 +83,10 @@
             class="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
             <!-- Theme dropdown -->
-            <div class="ml-3 relative z-50">
+            <div class="relative z-50 ml-3">
               <div>
                 <button
-                  class="p-1 flex text-sm border-2 border-background-selection hover:bg-background-selection rounded-full focus:outline-none focus:border-accent-class transition duration-150 ease-in-out"
+                  class="flex p-1 text-sm transition duration-150 ease-in-out border-2 rounded-full border-background-selection hover:bg-background-selection focus:outline-none focus:border-accent-class"
                   id="user-menu"
                   aria-label="User menu"
                   aria-haspopup="true"
@@ -115,11 +115,11 @@
 
               <div
                 v-if="themeMenu"
-                class="block origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg max-h-400px overflow-y-auto"
+                class="absolute right-0 block w-48 mt-2 overflow-y-auto origin-top-right rounded-md shadow-lg max-h-400px"
                 v-click-outside="hideTheme"
               >
                 <div
-                  class="py-1 rounded-md bg-background-selection shadow-xs"
+                  class="py-1 rounded-md shadow-xs bg-background-selection"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="user-menu"
@@ -129,7 +129,7 @@
                     :key="'theme-' + index"
                     @click.stop="setTheme(theme)"
                     href="#"
-                    class="block px-4 py-2 text-sm leading-5 text-text-foreground hover:bg-background-highlight focus:outline-none focus:bg-background-highlight transition duration-150 ease-in-out"
+                    class="block px-4 py-2 text-sm leading-5 transition duration-150 ease-in-out text-text-foreground hover:bg-background-highlight focus:outline-none focus:bg-background-highlight"
                     role="menuitem"
                     >{{ theme.charAt(0).toUpperCase() + theme.slice(1) }}</a
                   >
@@ -144,17 +144,17 @@
         <div class="px-2 pt-2 pb-3">
           <g-link
             to="/"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-text-foreground hover:bg-background-highlight focus:outline-none transition duration-150 ease-in-out"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none"
             >Home
           </g-link>
           <g-link
             to="/about/"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-text-foreground hover:bg-background-highlight focus:outline-none transition duration-150 ease-in-out"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none"
             >About
           </g-link>
           <g-link
             to="/projects/"
-            class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-text-foreground hover:bg-background-highlight focus:outline-none transition duration-150 ease-in-out"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none"
             >Projects
           </g-link>
         </div>

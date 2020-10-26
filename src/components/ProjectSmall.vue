@@ -1,12 +1,12 @@
 <template>
   <div
-    class="project-card shadow-2xl flex flex-col transition-all duration-100 transform hover:scale-125 hover:z-50 bg-background-base rounded"
+    class="flex flex-col transition-all duration-100 transform rounded shadow-2xl project-card hover:scale-125 hover:z-50 bg-background-base"
   >
-    <h3 class="font-bold text-xl text-accent-string p-3">{{ title }}</h3>
-    <g-link :to="url" class="project-card__img-container relative">
+    <h3 class="p-3 text-xl font-bold text-accent-string">{{ title }}</h3>
+    <g-link :to="url" class="relative project-card__img-container">
       <g-image :alt="title" :src="image" class="project-card__img"></g-image>
       <div
-        class="absolute w-full h-full top-0 hidden bg-transparent flex-col justify-center items-center"
+        class="absolute top-0 flex-col items-center justify-center hidden w-full h-full bg-transparent"
       >
         <svg
           class="w-10 h-10"
@@ -24,11 +24,11 @@
         </svg>
       </div>
     </g-link>
-    <div class="p-3 flex flex-col flex-1 justify-between">
+    <div class="flex flex-col justify-between flex-1 p-3">
       <p>{{ excerpt }}</p>
 
       <g-link
-        class="mt-2 font-bold text-center block p-2 border border-background-lighter bg-background-selection hover:bg-background-highlight rounded shadow-lg"
+        class="block p-2 mt-2 font-bold text-center border rounded shadow-lg border-background-lighter bg-background-selection hover:bg-background-highlight"
         :to="url"
         >Checkout this project!</g-link
       >
