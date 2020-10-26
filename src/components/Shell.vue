@@ -1,7 +1,7 @@
 <template>
-  <div class="p-3 rounded-xl sm:p-5 md:p-8 xl:p-12 shell">
+  <div class="shell rounded-xl">
     <div
-      class="flex items-center justify-between h-8 rounded-full shell__header bg-background-lighter"
+      class="flex items-center justify-between h-8 shell__header bg-background-lighter rounded-t-xl"
     >
       <div class="mx-3 font-bold">{{ title }}</div>
       <div class="flex items-center justify-center">
@@ -16,7 +16,7 @@
         ></div>
       </div>
     </div>
-    <div class="shell__content">
+    <div class="px-3 py-3 md:px-6 md:py-6 shell__content">
       <slot></slot>
     </div>
   </div>
