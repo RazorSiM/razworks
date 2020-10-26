@@ -73,6 +73,8 @@
             :image="edge.node.featuredImage"
             :excerpt="edge.node.excerpt"
             :url="edge.node.path"
+            :timetoread="edge.node.timeToRead"
+            :date="edge.node.date"
             class="rounded-lg"
           ></project-small>
         </div>
@@ -125,6 +127,8 @@ query {
         excerpt
         title
         featuredImage(quality: 40)
+        timeToRead
+        date(format: "MMMM DD, YYYY")
         path
       }
     }

@@ -2,7 +2,13 @@
   <div
     class="flex flex-col transition-all duration-100 transform rounded shadow-2xl project-card hover:scale-125 hover:z-50 bg-background-base"
   >
-    <h3 class="p-3 text-xl font-bold text-accent-string">{{ title }}</h3>
+    <h3 class="px-3 pt-3 text-xl font-bold text-accent-string">{{ title }}</h3>
+    <div class="px-3 pb-3 text-sm">
+      <span class="text-accent-fn">{{ date }} </span>
+      <span class="text-background-highlight"
+        >{{ timetoread }} {{ timetoread > 1 ? "minutes" : "minute" }} read</span
+      >
+    </div>
     <g-link :to="url" class="relative project-card__img-container">
       <g-image :alt="title" :src="image" class="project-card__img"></g-image>
       <div
@@ -43,6 +49,8 @@ export default {
     image: Object,
     excerpt: String,
     url: String,
+    date: String,
+    timetoread: Number,
   },
 };
 </script>
