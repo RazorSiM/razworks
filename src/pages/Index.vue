@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    <div class="index container mx-auto px-4 md:px-16">
-      <div class="intro my-20 md:my-32 w-full flex justify-center">
+    <div class="container px-4 mx-auto index md:px-16">
+      <div class="flex justify-center w-full my-20 intro md:my-32">
         <shell
           title="zsh"
           command="./init.sh"
           distroTitle="Arch Linux"
           :distroIcon="distroIcon"
-          class="w-full shadow-xl border-2 border-background-lighter"
+          class="w-full border-2 shadow-xl border-background-lighter"
         >
           <command
             command="./intro.sh"
@@ -17,7 +17,7 @@
           <div class="printed">
             <ascii></ascii>
             <h2
-              class="text-2xl md:text-4xl font-normal text-center leading-tight"
+              class="text-2xl font-normal leading-tight text-center md:text-4xl"
             >
               <span class="text-accent-fn font-dankit"
                 >Web Designer & Developer</span
@@ -29,7 +29,7 @@
             </h2>
           </div>
           <socials
-            class="socials my-10 w-full grid grid-flow-col gap-4 justify-center"
+            class="grid justify-center w-full grid-flow-col gap-4 my-10 socials"
           ></socials>
           <command
             command="bat about"
@@ -37,7 +37,7 @@
             :distroTitle="distroTitle"
           ></command>
 
-          <div class="prose mx-auto">
+          <div class="mx-auto prose">
             <h3 class="">What, how and why</h3>
             <p class="">
               I am going to skip the presentations to go straight to the point:
@@ -63,9 +63,9 @@
           </div>
         </shell>
       </div>
-      <div class="latest-projects mb-16">
-        <h2 class="text-4xl font-bold mb-6">Latest Projects</h2>
-        <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="mb-16 latest-projects">
+        <h2 class="mb-6 text-4xl font-bold">Latest Projects</h2>
+        <div class="grid grid-flow-row grid-cols-1 gap-6 md:grid-cols-3">
           <project-small
             v-for="edge in $page.keycaps.edges"
             :key="'keycap' + edge.node.id"
@@ -75,12 +75,15 @@
             :url="edge.node.path"
           ></project-small>
         </div>
+        <div class="flex justify-end w-full mt-3">
+          <g-link class="text-2xl" to="/projects/">See all ⏩</g-link>
+        </div>
       </div>
 
       <div class="featured-works">
-        <h3 class="text-right text-2xl font-bold mb-4">🌟Some of my works!</h3>
+        <h3 class="mb-4 text-2xl font-bold text-right">🌟Some of my works!</h3>
         <div
-          class="image-grid grid gap-1 grid-cols-4 grid-rows-3 grid-flow-col-dense"
+          class="grid grid-flow-col-dense grid-cols-4 grid-rows-3 gap-1 image-grid"
         >
           <template v-for="(img, index) in $page.home.edges[0].node.bestImages">
             <div
