@@ -1,6 +1,14 @@
 <template>
   <Layout>
     <div>
+      <!-- <ClientOnly> -->
+      <vue-scroll-progress-bar
+        height="5px"
+        :barClass="{ 'progress-bar': true }"
+        backgroundColor=""
+      />
+      <!-- </ClientOnly> -->
+
       <div
         class="px-4 pt-24 mx-auto prose lg:prose-xl"
         v-html="$page.about.edges[0].node.content"

@@ -1,6 +1,14 @@
 <template>
   <Layout>
     <div class="mb-10 keycap">
+      <!-- <ClientOnly> -->
+      <vue-scroll-progress-bar
+        height="5px"
+        :barClass="{ 'progress-bar': true }"
+        backgroundColor=""
+      />
+      <!-- </ClientOnly> -->
+
       <div class="relative shadow-2xl hero">
         <g-image
           v-if="$page.keycap.featuredImage !== null"

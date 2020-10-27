@@ -24,7 +24,7 @@ kits:
       alt: GMK Modern Japanese Desko Spacebar Kit,
       image: ./images/modernjapanesedesko/kits/Spacebar.jpg,
     }
-  - { name: Numpad Kitto, alt: GMK Modern Japanese Desko Numpad Kit, image: ./images/modernjapanesedesko/kits/numpad.jpg }
+  - { name: Numpad Kitto, alt: GMK Modern Japanese Desko Numpad Kit, image: ./images/modernjapanesedesko/kits/N oh umpad.jpg }
 mousepads:
   - { name: Mousepad No Signal Strip, image: ./images/modernjapanesedesko/mousepads/40.jpg }
   - { name: Mousepad Pixels, image: ./images/modernjapanesedesko/mousepads/44.jpg }

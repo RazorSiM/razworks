@@ -1,10 +1,33 @@
 <template>
-  <div class="flex flex-col justify-between layout font-dank" :class="theme">
+  <div
+    class="flex flex-col justify-between w-full transition-all duration-200 bg-background-base text-text-foreground layout font-dank"
+    :class="theme"
+  >
     <main-nav></main-nav>
     <transition name="fade" appear>
       <slot />
     </transition>
     <Footer class=""></Footer>
+    <back-to-top>
+      <button
+        class="p-3 transition-all duration-100 transform rounded-full shadow-xl bg-background-highlight hover:scale-125 hover:bg-accent-class text-text-foreground hover:text-background-base focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 11l7-7 7 7M5 19l7-7 7 7"
+          ></path>
+        </svg>
+      </button>
+    </back-to-top>
     <div
       v-if="copy"
       class="fixed bottom-0 right-0 w-full max-w-sm p-3 m-8 rounded-lg shadow-lg bg-background-lighter"
@@ -26,6 +49,7 @@ export default {
   data() {
     return {
       theme: this.$store.state.theme,
+      progress: 0,
     };
   },
   computed: {
@@ -65,11 +89,10 @@ export default {
 <style>
 .layout {
   min-height: 100vh;
-  @apply w-full;
-  @apply bg-background-base;
-  @apply text-text-foreground;
-  @apply transition-all;
-  @apply duration-200;
+}
+.progress-bar {
+  @apply bg-accent-var;
+  @apply rounded-full;
 }
 a {
   @apply text-accent-url;
