@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: docker
+name: razworks build
+
+steps:
+  - name: build
+    image: node:alpine
+    commands:
+     - npm install
+     - npm run lint
+     - npx gridsome build
+    when:
+      branch:
+        - develop
