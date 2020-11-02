@@ -13,3 +13,14 @@ steps:
     when:
       branch:
         - develop
+  - name: deploy
+    image: lucap/drone-netlify
+    settings:
+      token:
+        from_secret: netlify_token
+      site_id:
+        from_secret: site_id
+      path: ./dist
+    when:
+      branch:
+        - develop
