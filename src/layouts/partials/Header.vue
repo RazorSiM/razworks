@@ -216,7 +216,6 @@ export default {
         "codeschool",
         "cupertino",
         "flat",
-        "brogrammer",
         "google-dark",
         "google-light",
         "bow",
