@@ -7,7 +7,7 @@ Let's jump to the question I'll eventually have to answer:
 
 Why not? 🐱‍👤
 
-One of my first encounter with a **mechanical keyboard** was circa 1995, when my dad bringed home our first personal computer: it was an IBM Model M. Growing older I moved to mainstream keyboards and then i snatched a PS2 Filco Majestouch with NKRO.
+One of my first encounter with a **mechanical keyboard** was circa 1995, when my dad brought home our first personal computer: it was an IBM Model M. Growing older I moved to mainstream keyboards and then i snatched a PS2 Filco Majestouch with NKRO.
 
 ![Filco Majestouch](./images/filco_majestouch.jpg)
 
