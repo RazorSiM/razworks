@@ -48,22 +48,27 @@ renders:
 
 # GMK Avanguardia
 
-- Link to the [IC FORM](https://forms.gle/CvNgVBDoBvLn8xhx7)
-- Link to the [Discord Server](https://discord.gg/MrdRDzy)
-- Link to [Geekhack](https://geekhack.org/index.php?topic=105981.0)
+- Link to the [Discord Server](https://discord.gg/Mn2Ty3y)
+- Link to [Geekhack IC Thread](https://geekhack.org/index.php?topic=105981.0)
 
-## Updates
+## GB IS OFFICIAL 🥳
 
-I am getting the quotes from GMK, GB date is going to be announced soon!
-Meanwhile those are the **proxies**
+The GB will run from the **15th of December** to the **15th of Genuary**!
+We are setting up the prices and there will be a collaboration with [Artkey](https://artkeyuniverse.com/) for a good lokin' artisan.
+More to come in the next days, untill then there's an official proxy for the US too. It's [Vala Supply](https://vala.supply/) and I'm very happy to work with him!
+
+Proxy Recap
 
 | Region    | Vendor                               |
 | --------- | ------------------------------------ |
 | Europe    | [Candykeys](https://candykeys.com/)  |
 | Asia      | [iLumkb](https://ilumkb.com/)        |
 | Canada    | [Deskhero](https://www.deskhero.ca/) |
-| USA       | TBD                                  |
-| Australia | TBD                                  |
+| USA       | [Vala Supply](https://vala.supply/)  |
+
+I'll update you guys with prices and all the fuzz when I can get all the infos 👽
+
+### About the set
 
 I partnered up with my friend and designer Johnnymalandra and came up with the idea of **GMK Avanguardia**:
 I chose an italian word that, as you can guess corresponds to _Avant-guard_ or _Vanguard_,
