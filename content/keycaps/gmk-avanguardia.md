@@ -53,7 +53,7 @@ renders:
 
 ## GB IS OFFICIAL 🥳
 
-The GB will run from the **15th of December** to the **15th of Genuary**!
+The GB will run from the **15th of December** to the **15th of January**!
 We are setting up the prices and there will be a collaboration with [Artkey](https://artkeyuniverse.com/) for a good lokin' artisan.
 More to come in the next days, untill then there's an official proxy for the US too. It's [Vala Supply](https://vala.supply/) and I'm very happy to work with him!
 
@@ -67,6 +67,9 @@ Proxy Recap
 | USA       | [Vala Supply](https://vala.supply/)  |
 
 I'll update you guys with prices and all the fuzz when I can get all the infos 👽
+
+PS: here's the packaging concept
+![GMK Avanguardia Packaging](./images/avanguardia/packaging.jpg)
 
 ### About the set
 
