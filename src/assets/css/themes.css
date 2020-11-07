@@ -27,6 +27,24 @@
     --base0E: #b45bcf;
     --base0F: #00f769;
 }
+.avanguardia {
+  --base00: #252A36;
+  --base01: #373f4f;
+  --base02: #485269;
+  --base03: #5b6782;
+  --base04: #00d1ca;
+  --base05: #f7f2ea;
+  --base06: #f5f1ed;
+  --base07: #fcfbf7;
+  --base08: #D00070;
+  --base09: #685BC7;
+  --base0A: #5cc768;
+  --base0B: #685BC7;
+  --base0C: #5ca0c7;
+  --base0D: #D00070;
+  --base0E: #685BC7;
+  --base0F: #D00070;
+}
 
 .nord {
     --base00: #2E3440;
@@ -46,24 +64,7 @@
     --base0E: #A3BE8C;
     --base0F: #B48EAD;
 }
-.avanguardia {
-    --base00: #2e3448;
-    --base01: #3e475a;
-    --base02: #1f2435;
-    --base03: #666d87;
-    --base04: #535c71;
-    --base05: #828ca5; 
-    --base06: #a1a3a4;
-    --base07: #9342ff;
-    --base08: #4f37e5;
-    --base09: #111111;
-    --base0A: #271a92;
-    --base0B: #755cf5;
-    --base0C: #44166c;
-    --base0D: #4e2345;
-    --base0E: #b8b9bd;
-    --base0F: #4415df;
-}
+
 .bow {
     --base00: #ffffff; 
     --base01: #ffffff;

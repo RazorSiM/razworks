@@ -55,7 +55,7 @@ renders:
 
 The GB will run from the **15th of December** to the **15th of January**!
 We are setting up the prices and there will be a collaboration with [Artkey](https://artkeyuniverse.com/) for a good lokin' artisan.
-More to come in the next days, untill then there's an official proxy for the US too. It's [Vala Supply](https://vala.supply/) and I'm very happy to work with him!
+More to come in the next days, untill then there are official proxies for the US and Oceania too. They are [Vala Supply](https://vala.supply/) and [Switchkeys](https://www.switchkeys.com.au/) and I'm very happy to work with them!
 
 Proxy Recap
 
@@ -65,6 +65,7 @@ Proxy Recap
 | Asia      | [iLumkb](https://ilumkb.com/)        |
 | Canada    | [Deskhero](https://www.deskhero.ca/) |
 | USA       | [Vala Supply](https://vala.supply/)  |
+| Oceania   | [Switchkeys](https://www.switchkeys.com.au/)  |
 
 I'll update you guys with prices and all the fuzz when I can get all the infos 👽
 

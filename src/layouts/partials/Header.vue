@@ -196,6 +196,7 @@ export default {
     return {
       themes: [
         "dracula",
+        "avanguardia",
         "ocean",
         "onedark",
         "sakura",
