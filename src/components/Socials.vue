@@ -2,7 +2,7 @@
   <div>
     <template v-for="(social, index) in $static.metadata.social">
       <a
-        class="flex flex-col items-center justify-center transition-all duration-100 text-accent-url"
+        class="flex flex-col items-center justify-center transition-all duration-200"
         v-if="social.url"
         :href="social.url"
         :key="index"
@@ -24,7 +24,7 @@
       </a>
       <a
         v-else
-        class="flex flex-col items-center justify-center transition-all duration-100 text-accent-url"
+        class="flex flex-col items-center justify-center transition-all duration-100"
         @click="doCopy(social.title)"
         :key="index"
         target="_blank"

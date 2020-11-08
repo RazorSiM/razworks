@@ -26,34 +26,35 @@ module.exports = {
             color: theme("colors.text.foreground"),
           },
           a: {
-            color: theme("colors.accent.url"),
+            color: theme("colors.accentone"),
             transition: "all 0.2s",
             "&:hover": {
-              color: theme("colors.accent.tag"),
+              color: theme("colors.primary"),
             },
           },
-          strong: { color: theme("colors.accent.string") },
+          strong: { color: theme("colors.primary") },
+          em: { color: theme("colors.secondary") },
           blockquote: {
-            color: theme("colors.accent.quote"),
-            "border-left-color": theme("colors.accent.quote"),
+            color: theme("colors.tertiary"),
+            "border-left-color": theme("colors.tertiary"),
           },
           ul: {
             li: {
               "&::before": {
-                "background-color": theme("colors.accent.quote"),
+                "background-color": theme("colors.secondary"),
               },
             },
           },
           table: {
-            color: theme("colors.text.foreground"),
+            color: theme("colors.foreground"),
             thead: {
-              color: theme("colors.accent.fn"),
-              "border-bottom-color": theme("colors.background.highlight"),
+              color: theme("colors.secondary"),
+              "border-bottom-color": theme("colors.base03"),
             },
             tbody: {
-              color: theme("colors.text.foreground"),
+              color: theme("colors.foreground"),
               tr: {
-                "border-bottom-color": theme("colors.background.selection"),
+                "border-bottom-color": theme("colors.base02"),
               },
             },
           },
@@ -68,28 +69,27 @@ module.exports = {
     },
     colors: {
       // Variables to setup custom themes
+      accents: {
+        base0B: "var(--base0B)",
+        base0C: "var(--base0C)",
+        base0D: "var(--base0D)",
+        base0E: "var(--base0E)",
+        base0F: "var(--base0F)",
+      },
 
-      background: {
-        base: "var(--base00)",
-        lighter: "var(--base01)",
-        selection: "var(--base02)",
-        highlight: "var(--base03)",
-        light: "var(--base07)",
-      },
-      text: {
-        foreground: "var(--base05)",
-        light: "var(--base06)",
-      },
-      accent: {
-        var: "var(--base08)",
-        url: "var(--base09)",
-        class: "var(--base0A)",
-        string: "var(--base0B)",
-        quote: "var(--base0C)",
-        fn: "var(--base0D)",
-        key: "var(--base0E)",
-        tag: "var(--base0F)",
-      },
+      base00: "var(--base00)",
+      base01: "var(--base01)",
+      base02: "var(--base02)",
+      base03: "var(--base03)",
+
+      primary: "var(--base08)",
+      secondary: "var(--base09)",
+      tertiary: "var(--base0A)",
+      accentone: "var(--base07)",
+
+      foreground: "var(--base06)",
+      faccent: "var(--base04)",
+      fmuted: "var(--base05)",
 
       transparent: "transparent",
       current: "currentColor",

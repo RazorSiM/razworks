@@ -1,18 +1,18 @@
 <template>
   <div class="shell rounded-xl">
     <div
-      class="flex items-center justify-between h-8 shell__header bg-background-lighter rounded-t-xl"
+      class="flex items-center justify-between h-8 shell__header bg-base01 rounded-t-xl"
     >
       <div class="mx-3 font-bold">{{ title }}</div>
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center px-2">
         <div
-          class="w-4 h-4 mx-2 border-4 border-solid rounded-full border-accent-var"
+          class="w-4 h-4 mx-1 border-4 border-solid rounded-full border-primary"
         ></div>
         <div
-          class="w-4 h-4 mx-2 border-4 border-solid rounded-full border-accent-class"
+          class="w-4 h-4 mx-1 border-4 border-solid rounded-full border-secondary"
         ></div>
         <div
-          class="w-4 h-4 mx-2 border-4 border-solid rounded-full border-accent-string"
+          class="w-4 h-4 mx-1 border-4 border-solid rounded-full border-tertiary"
         ></div>
       </div>
     </div>

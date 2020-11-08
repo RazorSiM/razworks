@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-between w-full transition-all duration-200 bg-background-base text-text-foreground layout font-dank"
+    class="flex flex-col justify-between w-full transition-all duration-200 bg-base00 text-foreground layout font-dank"
     :class="theme"
   >
     <main-nav></main-nav>
@@ -10,7 +10,7 @@
     <Footer class=""></Footer>
     <back-to-top>
       <button
-        class="p-3 transition-all duration-100 transform rounded-full shadow-xl bg-background-highlight hover:scale-125 hover:bg-accent-class text-text-foreground hover:text-background-base focus:outline-none"
+        class="p-3 transition-all duration-100 transform rounded-full shadow-xl bg-base03 hover:scale-110 hover:bg-foreground hover:text-primary focus:outline-none"
       >
         <svg
           class="w-6 h-6"
@@ -30,7 +30,7 @@
     </back-to-top>
     <div
       v-if="copy"
-      class="fixed bottom-0 right-0 w-full max-w-sm p-3 m-8 rounded-lg shadow-lg bg-background-lighter"
+      class="fixed bottom-0 right-0 w-full max-w-sm p-3 m-8 rounded-lg shadow-xl bg-base01"
     >
       🤖 Item in your Clipboard
     </div>
@@ -91,18 +91,19 @@ export default {
   min-height: 100vh;
 }
 .progress-bar {
-  @apply bg-accent-var;
+  /* @apply bg-primary; */
   @apply rounded-full;
+  background: linear-gradient(to right, var(--base07), var(--base0A));
 }
 a {
-  @apply text-accent-url;
+  @apply text-accentone;
   @apply font-dankit;
   @apply transition-all;
   @apply duration-100;
 }
 a:hover {
   @apply underline;
-  @apply text-accent-tag;
+  @apply text-primary;
 }
 .fade-enter-active {
   transition: opacity 0.5s;

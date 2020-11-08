@@ -1,7 +1,7 @@
 <template>
   <header class="w-full p-3 header">
     <nav
-      class="shadow-2xl bg-background-lighter"
+      class="shadow-2xl bg-base01"
       :class="{ 'rounded-lg': navMenu, 'rounded-full': !navMenu }"
     >
       <div class="px-2 mx-auto">
@@ -9,7 +9,7 @@
           <div class="inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
-              class="inline-flex items-center justify-center p-2 transition duration-150 ease-in-out rounded-md text-background-highlight hover:text-accent-var hover:bg-background-highlight focus:outline-none focus:bg-background-highlight focus:text-accent-class"
+              class="inline-flex items-center justify-center p-2 transition duration-150 ease-in-out rounded-md text-faccent hover:text-primary focus:outline-none focus:bg-transparent focus:text-accentone"
               aria-label="Main menu"
               aria-expanded="false"
               @click.stop="navMenu = !navMenu"
@@ -51,7 +51,7 @@
             <div class="relative w-10 h-10">
               <div class="absolute w-10 h-10">
                 <svg
-                  class="w-10 h-10 fill-current text-background-base"
+                  class="w-10 h-10 fill-current text-base00"
                   viewBox="0 0 243 243"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@
                 class="absolute flex flex-col items-center justify-center w-10 h-10"
               >
                 <svg
-                  class="w-6 h-6 fill-current text-accent-tag"
+                  class="w-6 h-6 fill-current text-primary"
                   viewBox="0 0 151 151"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,17 +83,17 @@
               <div class="flex">
                 <g-link
                   to="/"
-                  class="px-3 py-2 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-text-foreground focus:outline-none hover:bg-background-highlight"
+                  class="px-3 py-2 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-foreground focus:outline-none hover:bg-base03 hover:text-fmuted"
                   >Home
                 </g-link>
                 <g-link
                   to="/about/"
-                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700"
+                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-foreground focus:outline-none hover:bg-base03 hover:text-fmuted"
                   >About
                 </g-link>
                 <g-link
                   to="/projects/"
-                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none focus:text-white focus:bg-gray-700"
+                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-foreground focus:outline-none hover:bg-base03 hover:text-fmuted"
                   >Projects
                 </g-link>
               </div>
@@ -106,14 +106,14 @@
             <div class="relative z-50 ml-3">
               <div>
                 <button
-                  class="flex p-1 text-sm transition duration-150 ease-in-out border-2 rounded-full border-background-selection hover:bg-background-selection focus:outline-none focus:border-accent-class"
+                  class="flex p-1 text-sm transition duration-150 ease-in-out border-2 rounded-full border-base02 hover:bg-base02 focus:outline-none focus:border-accentone"
                   id="user-menu"
                   aria-label="User menu"
                   aria-haspopup="true"
                   @click.stop="themeMenu = !themeMenu"
                 >
                   <svg
-                    class="w-6 h-6 ml-1 text-accent-var"
+                    class="w-6 h-6 ml-1 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -139,7 +139,7 @@
                 v-click-outside="hideTheme"
               >
                 <div
-                  class="py-1 rounded-md shadow-xs bg-background-selection"
+                  class="py-1 rounded-md shadow-xs bg-base01"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="user-menu"
@@ -149,7 +149,7 @@
                     :key="'theme-' + index"
                     @click.stop="setTheme(theme)"
                     href="#"
-                    class="block px-4 py-2 text-sm leading-5 transition duration-150 ease-in-out text-text-foreground hover:bg-background-highlight focus:outline-none focus:bg-background-highlight"
+                    class="block px-4 py-2 text-sm leading-5 transition duration-150 ease-in-out text-foreground hover:bg-base02 focus:outline-none focus:bg-base03"
                     role="menuitem"
                     >{{ theme.charAt(0).toUpperCase() + theme.slice(1) }}</a
                   >
@@ -164,17 +164,17 @@
         <div class="px-2 pt-2 pb-3">
           <g-link
             to="/"
-            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-foreground hover:bg-base02 focus:outline-none"
             >Home
           </g-link>
           <g-link
             to="/about/"
-            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-foreground hover:bg-base02 focus:outline-none"
             >About
           </g-link>
           <g-link
             to="/projects/"
-            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-text-foreground hover:bg-background-highlight focus:outline-none"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-foreground hover:bg-base02 focus:outline-none"
             >Projects
           </g-link>
         </div>
@@ -262,7 +262,7 @@ export default {
 </script>
 <style>
 .active--exact {
-  @apply bg-background-selection;
+  @apply bg-base03;
   @apply rounded;
   @apply font-bold;
 }

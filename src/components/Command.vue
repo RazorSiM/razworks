@@ -1,5 +1,5 @@
 <template>
-  <div class="my-3 shell__content__command">
+  <div class="my-3">
     <p class="text-left">
       <svg
         class="inline w-auto h-4 fill-current"
@@ -10,11 +10,9 @@
         <title>{{ distroTitle }}</title>
         <path :d="distroIcon"></path>
       </svg>
-      <span class="font-bold text-accent-class"> ~ </span>
-      <span class="font-bold">> </span>
-      <span class="font-bold text-accent-string font-dankit">{{
-        command
-      }}</span>
+      <span class="font-bold text-accentone"> ~ </span>
+      <span class="font-bold text-faccent">> </span>
+      <span class="font-bold text-secondary font-dankit">{{ command }}</span>
     </p>
   </div>
 </template>

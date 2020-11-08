@@ -10,7 +10,7 @@
           <button
             v-if="showClose"
             aria-label="close"
-            class="absolute top-0 right-0 p-4 mx-10 my-2 text-4xl leading-5 text-gray-500"
+            class="absolute top-0 right-0 p-4 mx-10 my-2 text-4xl leading-5 transition duration-100 text-faccent hover:text-tertiary focus:outline-none"
             @click.prevent="close"
           >
             ×

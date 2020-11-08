@@ -19,17 +19,17 @@
             <h2
               class="text-2xl font-normal leading-tight text-center md:text-4xl"
             >
-              <span class="text-accent-fn font-dankit"
+              <span class="text-primary font-dankit"
                 >Web Designer & Developer</span
               >
-              by day, <br /><span class="text-accent-fn font-dankit"
+              by day, <br /><span class="text-primary font-dankit"
                 >Blenderman</span
               >
               by night
             </h2>
           </div>
           <socials
-            class="grid justify-center w-full grid-flow-col gap-4 my-10 socials"
+            class="grid justify-center w-full grid-flow-col gap-4 my-10"
           ></socials>
           <command
             command="bat about"
@@ -91,7 +91,7 @@
           <template v-for="(img, index) in $page.home.edges[0].node.bestImages">
             <div
               :key="'' + index"
-              class="rounded-md shadow-2xl bg-background-lighter hover:cursor-pointer"
+              class="rounded-md shadow-2xl bg-base01 hover:cursor-pointer"
               :class="{ 'col-span-3 row-span-3': index === 0 }"
             >
               <g-image

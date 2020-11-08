@@ -32,6 +32,7 @@ query {
   }
 }
 </page-query>
+<style></style>
 <script>
 import Socials from "../components/Socials";
 export default {

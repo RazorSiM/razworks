@@ -3,7 +3,7 @@
     class="relative flex items-center justify-center w-full h-10 overflow-hidden"
   >
     <div
-      class="absolute top-0 left-0 w-full h-full rounded-full bg-background-lighter"
+      class="absolute top-0 left-0 w-full h-full rounded-full bg-base01"
       :style="{ transform: `translate3d(-${(1 - value) * 100}%, 0,0)` }"
     ></div>
     <div class="z-50 flex items-center h-full">

@@ -1,34 +1,32 @@
 @font-face {
-    font-family: Dank;
-    src: url('../fonts/dank.otf');
-    
+  font-family: Dank;
+  src: url("../fonts/dank.otf");
 }
 
 @font-face {
-    font-family: DankIt;
-    src: url('../fonts/dankIt.otf');
-    
+  font-family: DankIt;
+  src: url("../fonts/dankIt.otf");
 }
 .dracula {
-    --base00: #282936; 
-    --base01: #3a3c4e;
-    --base02: #4d4f68;
-    --base03: #626483;
-    --base04: #62d6e8;
-    --base05: #e9e9f4; 
-    --base06: #f1f2f8;
-    --base07: #f7f7fb;
-    --base08: #ea51b2;
-    --base09: #b45bcf;
-    --base0A: #00f769;
-    --base0B: #ebff87;
-    --base0C: #a1efe4;
-    --base0D: #62d6e8;
-    --base0E: #b45bcf;
-    --base0F: #00f769;
+  --base00: #282936;
+  --base01: #3a3c4e;
+  --base02: #4d4f68;
+  --base03: #626483;
+  --base04: #62d6e8;
+  --base05: #e9e9f4;
+  --base06: #f1f2f8;
+  --base07: #f7f7fb;
+  --base08: #ea51b2;
+  --base09: #b45bcf;
+  --base0A: #00f769;
+  --base0B: #ebff87;
+  --base0C: #a1efe4;
+  --base0D: #62d6e8;
+  --base0E: #b45bcf;
+  --base0F: #00f769;
 }
 .avanguardia {
-  --base00: #252A36;
+  --base00: #252a36;
   --base01: #373f4f;
   --base02: #485269;
   --base03: #5b6782;
@@ -36,474 +34,466 @@
   --base05: #f7f2ea;
   --base06: #f5f1ed;
   --base07: #fcfbf7;
-  --base08: #D00070;
-  --base09: #685BC7;
+  --base08: #d00070;
+  --base09: #685bc7;
   --base0A: #5cc768;
-  --base0B: #685BC7;
+  --base0B: #685bc7;
   --base0C: #5ca0c7;
-  --base0D: #D00070;
-  --base0E: #685BC7;
-  --base0F: #D00070;
+  --base0D: #d00070;
+  --base0E: #685bc7;
+  --base0F: #d00070;
 }
 
 .nord {
-    --base00: #2E3440;
-    --base01: #3B4252;
-    --base02: #434C5E;
-    --base03: #4C566A;
-    --base04: #D8DEE9;
-    --base05: #E5E9F0;
-    --base06: #ECEFF4;
-    --base07: #8FBCBB;
-    --base08: #88C0D0;
-    --base09: #81A1C1;
-    --base0A: #5E81AC;
-    --base0B: #BF616A;
-    --base0C: #D08770;
-    --base0D: #EBCB8B;
-    --base0E: #A3BE8C;
-    --base0F: #B48EAD;
+  --base00: #2e3440;
+  --base01: #3b4252;
+  --base02: #434c5e;
+  --base03: #4c566a;
+  --base04: #d8dee9;
+  --base05: #e5e9f0;
+  --base06: #eceff4;
+  --base07: #8fbcbb;
+  --base08: #88c0d0;
+  --base09: #81a1c1;
+  --base0A: #5e81ac;
+  --base0B: #bf616a;
+  --base0C: #d08770;
+  --base0D: #ebcb8b;
+  --base0E: #a3be8c;
+  --base0F: #b48ead;
 }
 
 .bow {
-    --base00: #ffffff; 
-    --base01: #ffffff;
-    --base02: #ffffff;
-    --base03: #ffffff;
-    --base04: #ffffff;
-    --base05: #000000; 
-    --base06: #000000;
-    --base07: #000000;
-    --base08: #000000;
-    --base09: #000000;
-    --base0A: #000000;
-    --base0B: #000000;
-    --base0C: #000000;
-    --base0D: #000000;
-    --base0E: #000000;
-    --base0F: #000000;
+  --base00: #ffffff;
+  --base01: #ffffff;
+  --base02: #ffffff;
+  --base03: #ffffff;
+  --base04: #ffffff;
+  --base05: #000000;
+  --base06: #000000;
+  --base07: #000000;
+  --base08: #000000;
+  --base09: #000000;
+  --base0A: #000000;
+  --base0B: #000000;
+  --base0C: #000000;
+  --base0D: #000000;
+  --base0E: #000000;
+  --base0F: #000000;
 }
 .wob {
-    --base00: #000000; 
-    --base01: #000000;
-    --base02: #000000;
-    --base03: #000000;
-    --base04: #000000;
-    --base05: #ffffff; 
-    --base06: #ffffff;
-    --base07: #ffffff;
-    --base08: #ffffff;
-    --base09: #ffffff;
-    --base0A: #ffffff;
-    --base0B: #ffffff;
-    --base0C: #ffffff;
-    --base0D: #ffffff;
-    --base0E: #ffffff;
-    --base0F: #ffffff;
+  --base00: #000000;
+  --base01: #000000;
+  --base02: #000000;
+  --base03: #000000;
+  --base04: #000000;
+  --base05: #ffffff;
+  --base06: #ffffff;
+  --base07: #ffffff;
+  --base08: #ffffff;
+  --base09: #ffffff;
+  --base0A: #ffffff;
+  --base0B: #ffffff;
+  --base0C: #ffffff;
+  --base0D: #ffffff;
+  --base0E: #ffffff;
+  --base0F: #ffffff;
 }
 
 .google-dark {
-    --base00: #1d1f21;
-    --base01: #282a2e;
-    --base02: #373b41;
-    --base03: #969896;
-    --base04: #b4b7b4;
-    --base05: #c5c8c6;
-    --base06: #e0e0e0;
-    --base07: #ffffff;
-    --base08: #CC342B;
-    --base09: #F96A38;
-    --base0A: #FBA922;
-    --base0B: #198844;
-    --base0C: #3971ED;
-    --base0D: #3971ED;
-    --base0E: #A36AC7;
-    --base0F: #3971ED;
-  }
-  
-  .google-light {
-    --base00: #ffffff;
-    --base01: #e0e0e0;
-    --base02: #c5c8c6;
-    --base03: #b4b7b4;
-    --base04: #969896;
-    --base05: #373b41;
-    --base06: #282a2e;
-    --base07: #1d1f21;
-    --base08: #CC342B;
-    --base09: #F96A38;
-    --base0A: #FBA922;
-    --base0B: #198844;
-    --base0C: #3971ED;
-    --base0D: #3971ED;
-    --base0E: #A36AC7;
-    --base0F: #3971ED;
-  }
-  .solarized-dark {
-    --base00: #002b36;
-    --base01: #073642;
-    --base02: #586e75;
-    --base03: #657b83;
-    --base04: #839496;
-    --base05: #93a1a1;
-    --base06: #eee8d5;
-    --base07: #fdf6e3;
-    --base08: #dc322f;
-    --base09: #cb4b16;
-    --base0A: #b58900;
-    --base0B: #859900;
-    --base0C: #2aa198;
-    --base0D: #268bd2;
-    --base0E: #6c71c4;
-    --base0F: #d33682;
-  }
-  .solarized-light {
-    --base00: #fdf6e3;
-    --base01: #eee8d5;
-    --base02: #93a1a1;
-    --base03: #839496;
-    --base04: #657b83;
-    --base05: #586e75;
-    --base06: #073642;
-    --base07: #002b36;
-    --base08: #dc322f;
-    --base09: #cb4b16;
-    --base0A: #b58900;
-    --base0B: #859900;
-    --base0C: #2aa198;
-    --base0D: #268bd2;
-    --base0E: #6c71c4;
-    --base0F: #d33682;
-  }
-  .palenight {
-    --base00: #292D3E;
-    --base01: #444267;
-    --base02: #32374D;
-    --base03: #676E95;
-    --base04: #8796B0;
-    --base05: #959DCB;
-    --base06: #959DCB;
-    --base07: #FFFFFF;
-    --base08: #F07178;
-    --base09: #F78C6C;
-    --base0A: #FFCB6B;
-    --base0B: #C3E88D;
-    --base0C: #89DDFF;
-    --base0D: #82AAFF;
-    --base0E: #C792EA;
-    --base0F: #FF5370;
-  }
-  .material {
-    --base00: #263238;
-    --base01: #2E3C43;
-    --base02: #314549;
-    --base03: #546E7A;
-    --base04: #B2CCD6;
-    --base05: #EEFFFF;
-    --base06: #EEFFFF;
-    --base07: #FFFFFF;
-    --base08: #F07178;
-    --base09: #F78C6C;
-    --base0A: #FFCB6B;
-    --base0B: #C3E88D;
-    --base0C: #89DDFF;
-    --base0D: #82AAFF;
-    --base0E: #C792EA;
-    --base0F: #FF5370;
-  }
-  .vivid {
-    --base00: #202124;
-    --base01: #27292c;
-    --base02: #323639;
-    --base03: #44464d;
-    --base04: #676c71;
-    --base05: #80868b;
-    --base06: #9e9e9e;
-    --base07: #ffffff;
-    --base08: #f44336;
-    --base09: #ff9800;
-    --base0A: #ffeb3b;
-    --base0B: #00e676;
-    --base0C: #00bcd4;
-    --base0D: #2196f3;
-    --base0E: #673ab7;
-    --base0F: #8d6e63;
-  }
-  .ashes {
-    --base00: #1C2023;
-    --base01: #393F45;
-    --base02: #565E65;
-    --base03: #747C84;
-    --base04: #ADB3BA;
-    --base05: #C7CCD1;
-    --base06: #DFE2E5;
-    --base07: #F3F4F5;
-    --base08: #C7AE95;
-    --base09: #C7C795;
-    --base0A: #AEC795;
-    --base0B: #95C7AE;
-    --base0C: #95AEC7;
-    --base0D: #AE95C7;
-    --base0E: #C795AE;
-    --base0F: #C79595;
-  }
-  .brogrammer {
-    --base00: #1f1f1f;
-    --base01: #f81118;
-    --base02: #2dc55e;
-    --base03: #ecba0f;
-    --base04: #2a84d2;
-    --base05: #4e5ab7;
-    --base06: #1081d6;
-    --base07: #d6dbe5;
-    --base08: #d6dbe5;
-    --base09: #de352e;
-    --base0A: #1dd361;
-    --base0B: #f3bd09;
-    --base0C: #1081d6;
-    --base0D: #5350b9;
-    --base0E: #0f7ddb;
-    --base0F: #ffffff;
-  }
-  .codeschool {
-    --base00: #232c31;
-    --base01: #1c3657;
-    --base02: #2a343a;
-    --base03: #3f4944;
-    --base04: #84898c;
-    --base05: #9ea7a6;
-    --base06: #a7cfa3;
-    --base07: #b5d8f6;
-    --base08: #2a5491;
-    --base09: #43820d;
-    --base0A: #a03b1e;
-    --base0B: #237986;
-    --base0C: #b02f30;
-    --base0D: #484d79;
-    --base0E: #c59820;
-    --base0F: #c98344;
-  }
-  .cupertino {
-    --base00: #ffffff;
-    --base01: #c0c0c0;
-    --base02: #c0c0c0;
-    --base03: #808080;
-    --base04: #808080;
-    --base05: #404040;
-    --base06: #404040;
-    --base07: #5e5e5e;
-    --base08: #c41a15;
-    --base09: #eb8500;
-    --base0A: #826b28;
-    --base0B: #007400;
-    --base0C: #318495;
-    --base0D: #0000ff;
-    --base0E: #a90d91;
-    --base0F: #826b28;
-  }
-  .flat {
-    --base00: #2C3E50;
-    --base01: #34495E;
-    --base02: #7F8C8D;
-    --base03: #95A5A6;
-    --base04: #BDC3C7;
-    --base05: #e0e0e0;
-    --base06: #f5f5f5;
-    --base07: #ECF0F1;
-    --base08: #E74C3C;
-    --base09: #E67E22;
-    --base0A: #F1C40F;
-    --base0B: #2ECC71;
-    --base0C: #1ABC9C;
-    --base0D: #3498DB;
-    --base0E: #9B59B6;
-    --base0F: #be643c;
-  }
-  .fruit-soda {
-    --base00: #f1ecf1;
-    --base01: #e0dee0;
-    --base02: #d8d5d5;
-    --base03: #b5b4b6;
-    --base04: #979598;
-    --base05: #515151;
-    --base06: #474545;
-    --base07: #2d2c2c;
-    --base08: #fe3e31;
-    --base09: #fe6d08;
-    --base0A: #f7e203;
-    --base0B: #47f74c;
-    --base0C: #0f9cfd;
-    --base0D: #2931df;
-    --base0E: #611fce;
-    --base0F: #b16f40;
-  }
- .github {
-    --base00: #ffffff;
-    --base01: #f5f5f5;
-    --base02: #c8c8fa;
-    --base03: #969896;
-    --base04: #e8e8e8;
-    --base05: #333333;
-    --base06: #333333;
-    --base07: #333333;
-    --base08: #ed6a43;
-    --base09: #0086b3;
-    --base0A: #795da3;
-    --base0B: #183691;
-    --base0C: #183691;
-    --base0D: #795da3;
-    --base0E: #a71d5d;
-    --base0F: #333333;
-  }
+  --base00: #1d1f21;
+  --base01: #282a2e;
+  --base02: #373b41;
+  --base03: #969896;
+  --base04: #b4b7b4;
+  --base05: #c5c8c6;
+  --base06: #e0e0e0;
+  --base07: #ffffff;
+  --base08: #cc342b;
+  --base09: #f96a38;
+  --base0A: #fba922;
+  --base0B: #198844;
+  --base0C: #3971ed;
+  --base0D: #3971ed;
+  --base0E: #a36ac7;
+  --base0F: #3971ed;
+}
+
+.google-light {
+  --base00: #ffffff;
+  --base01: #e0e0e0;
+  --base02: #c5c8c6;
+  --base03: #b4b7b4;
+  --base04: #969896;
+  --base05: #373b41;
+  --base06: #282a2e;
+  --base07: #1d1f21;
+  --base08: #cc342b;
+  --base09: #f96a38;
+  --base0A: #fba922;
+  --base0B: #198844;
+  --base0C: #3971ed;
+  --base0D: #3971ed;
+  --base0E: #a36ac7;
+  --base0F: #3971ed;
+}
+.solarized-dark {
+  --base00: #002b36;
+  --base01: #073642;
+  --base02: #586e75;
+  --base03: #657b83;
+  --base04: #839496;
+  --base05: #93a1a1;
+  --base06: #eee8d5;
+  --base07: #fdf6e3;
+  --base08: #dc322f;
+  --base09: #cb4b16;
+  --base0A: #b58900;
+  --base0B: #859900;
+  --base0C: #2aa198;
+  --base0D: #268bd2;
+  --base0E: #6c71c4;
+  --base0F: #d33682;
+}
+.solarized-light {
+  --base00: #fdf6e3;
+  --base01: #eee8d5;
+  --base02: #93a1a1;
+  --base03: #839496;
+  --base04: #657b83;
+  --base05: #586e75;
+  --base06: #073642;
+  --base07: #002b36;
+  --base08: #dc322f;
+  --base09: #cb4b16;
+  --base0A: #b58900;
+  --base0B: #859900;
+  --base0C: #2aa198;
+  --base0D: #268bd2;
+  --base0E: #6c71c4;
+  --base0F: #d33682;
+}
+.palenight {
+  --base00: #292d3e;
+  --base01: #444267;
+  --base02: #32374d;
+  --base03: #676e95;
+  --base04: #8796b0;
+  --base05: #959dcb;
+  --base06: #959dcb;
+  --base07: #ffffff;
+  --base08: #f07178;
+  --base09: #f78c6c;
+  --base0A: #ffcb6b;
+  --base0B: #c3e88d;
+  --base0C: #89ddff;
+  --base0D: #82aaff;
+  --base0E: #c792ea;
+  --base0F: #ff5370;
+}
+.material {
+  --base00: #263238;
+  --base01: #2e3c43;
+  --base02: #314549;
+  --base03: #546e7a;
+  --base04: #b2ccd6;
+  --base05: #eeffff;
+  --base06: #eeffff;
+  --base07: #ffffff;
+  --base08: #f07178;
+  --base09: #f78c6c;
+  --base0A: #ffcb6b;
+  --base0B: #c3e88d;
+  --base0C: #89ddff;
+  --base0D: #82aaff;
+  --base0E: #c792ea;
+  --base0F: #ff5370;
+}
+.vivid {
+  --base00: #202124;
+  --base01: #27292c;
+  --base02: #323639;
+  --base03: #44464d;
+  --base04: #676c71;
+  --base05: #80868b;
+  --base06: #9e9e9e;
+  --base07: #ffffff;
+  --base08: #f44336;
+  --base09: #ff9800;
+  --base0A: #ffeb3b;
+  --base0B: #00e676;
+  --base0C: #00bcd4;
+  --base0D: #2196f3;
+  --base0E: #673ab7;
+  --base0F: #8d6e63;
+}
+.ashes {
+  --base00: #1c2023;
+  --base01: #393f45;
+  --base02: #565e65;
+  --base03: #747c84;
+  --base04: #adb3ba;
+  --base05: #c7ccd1;
+  --base06: #dfe2e5;
+  --base07: #f3f4f5;
+  --base08: #c7ae95;
+  --base09: #c7c795;
+  --base0A: #aec795;
+  --base0B: #95c7ae;
+  --base0C: #95aec7;
+  --base0D: #ae95c7;
+  --base0E: #c795ae;
+  --base0F: #c79595;
+}
+.brogrammer {
+  --base00: #1f1f1f;
+  --base01: #f81118;
+  --base02: #2dc55e;
+  --base03: #ecba0f;
+  --base04: #2a84d2;
+  --base05: #4e5ab7;
+  --base06: #1081d6;
+  --base07: #d6dbe5;
+  --base08: #d6dbe5;
+  --base09: #de352e;
+  --base0A: #1dd361;
+  --base0B: #f3bd09;
+  --base0C: #1081d6;
+  --base0D: #5350b9;
+  --base0E: #0f7ddb;
+  --base0F: #ffffff;
+}
+.codeschool {
+  --base00: #232c31;
+  --base01: #1c3657;
+  --base02: #2a343a;
+  --base03: #3f4944;
+  --base04: #84898c;
+  --base05: #9ea7a6;
+  --base06: #a7cfa3;
+  --base07: #b5d8f6;
+  --base08: #2a5491;
+  --base09: #43820d;
+  --base0A: #a03b1e;
+  --base0B: #237986;
+  --base0C: #b02f30;
+  --base0D: #484d79;
+  --base0E: #c59820;
+  --base0F: #c98344;
+}
+.cupertino {
+  --base00: #ffffff;
+  --base01: #c0c0c0;
+  --base02: #c0c0c0;
+  --base03: #808080;
+  --base04: #808080;
+  --base05: #404040;
+  --base06: #404040;
+  --base07: #5e5e5e;
+  --base08: #c41a15;
+  --base09: #eb8500;
+  --base0A: #826b28;
+  --base0B: #007400;
+  --base0C: #318495;
+  --base0D: #0000ff;
+  --base0E: #a90d91;
+  --base0F: #826b28;
+}
+.flat {
+  --base00: #2c3e50;
+  --base01: #34495e;
+  --base02: #7f8c8d;
+  --base03: #95a5a6;
+  --base04: #bdc3c7;
+  --base05: #e0e0e0;
+  --base06: #f5f5f5;
+  --base07: #ecf0f1;
+  --base08: #e74c3c;
+  --base09: #e67e22;
+  --base0A: #f1c40f;
+  --base0B: #2ecc71;
+  --base0C: #1abc9c;
+  --base0D: #3498db;
+  --base0E: #9b59b6;
+  --base0F: #be643c;
+}
+.fruit-soda {
+  --base00: #f1ecf1;
+  --base01: #e0dee0;
+  --base02: #d8d5d5;
+  --base03: #b5b4b6;
+  --base04: #979598;
+  --base05: #515151;
+  --base06: #474545;
+  --base07: #2d2c2c;
+  --base08: #fe3e31;
+  --base09: #fe6d08;
+  --base0A: #f7e203;
+  --base0B: #47f74c;
+  --base0C: #0f9cfd;
+  --base0D: #2931df;
+  --base0E: #611fce;
+  --base0F: #b16f40;
+}
+.github {
+  --base00: #ffffff;
+  --base01: #f5f5f5;
+  --base02: #c8c8fa;
+  --base03: #969896;
+  --base04: #e8e8e8;
+  --base05: #333333;
+  --base06: #333333;
+  --base07: #333333;
+  --base08: #ed6a43;
+  --base09: #0086b3;
+  --base0A: #795da3;
+  --base0B: #183691;
+  --base0C: #183691;
+  --base0D: #795da3;
+  --base0E: #a71d5d;
+  --base0F: #333333;
+}
 .green-screen {
-    --base00: #001100;
-    --base01: #003300;
-    --base02: #005500;
-    --base03: #007700;
-    --base04: #009900;
-    --base05: #00bb00;
-    --base06: #00dd00;
-    --base07: #00ff00;
-    --base08: #007700;
-    --base09: #009900;
-    --base0A: #007700;
-    --base0B: #00bb00;
-    --base0C: #005500;
-    --base0D: #009900;
-    --base0E: #00bb00;
-    --base0F: #005500;
-  }
-  .icy {
-    --base00: #021012;
-    --base01: #031619;
-    --base02: #041f23;
-    --base03: #052e34;
-    --base04: #064048;
-    --base05: #095b67;
-    --base06: #0c7c8c;
-    --base07: #109cb0;
-    --base08: #16c1d9;
-    --base09: #b3ebf2;
-    --base0A: #80deea;
-    --base0B: #4dd0e1;
-    --base0C: #26c6da;
-    --base0D: #00bcd4;
-    --base0E: #00acc1;
-    --base0F: #0097a7;
-  }
-  .monokai {
-    --base00: #272822;
-    --base01: #383830;
-    --base02: #49483e;
-    --base03: #75715e;
-    --base04: #a59f85;
-    --base05: #f8f8f2;
-    --base06: #f5f4f1;
-    --base07: #f9f8f5;
-    --base08: #f92672;
-    --base09: #fd971f;
-    --base0A: #f4bf75;
-    --base0B: #a6e22e;
-    --base0C: #a1efe4;
-    --base0D: #66d9ef;
-    --base0E: #ae81ff;
-    --base0F: #cc6633;
-  }
-  .mocha {
-    --base00: #3B3228;
-    --base01: #534636;
-    --base02: #645240;
-    --base03: #7e705a;
-    --base04: #b8afad;
-    --base05: #d0c8c6;
-    --base06: #e9e1dd;
-    --base07: #f5eeeb;
-    --base08: #cb6077;
-    --base09: #d28b71;
-    --base0A: #f4bc87;
-    --base0B: #beb55b;
-    --base0C: #7bbda4;
-    --base0D: #8ab3b5;
-    --base0E: #a89bb9;
-    --base0F: #bb9584;
-  }
-  .ocean {
-    --base00: #2b303b;
-    --base01: #343d46;
-    --base02: #4f5b66;
-    --base03: #65737e;
-    --base04: #a7adba;
-    --base05: #c0c5ce;
-    --base06: #dfe1e8;
-    --base07: #eff1f5;
-    --base08: #bf616a;
-    --base09: #d08770;
-    --base0A: #ebcb8b;
-    --base0B: #a3be8c;
-    --base0C: #96b5b4;
-    --base0D: #8fa1b3;
-    --base0E: #b48ead;
-    --base0F: #ab7967;
-  }
-  .onedark {
-    --base00: #282c34;
-    --base01: #353b45;
-    --base02: #3e4451;
-    --base03: #545862;
-    --base04: #565c64;
-    --base05: #abb2bf;
-    --base06: #b6bdca;
-    --base07: #c8ccd4;
-    --base08: #e06c75;
-    --base09: #d19a66;
-    --base0A: #e5c07b;
-    --base0B: #98c379;
-    --base0C: #56b6c2;
-    --base0D: #61afef;
-    --base0E: #c678dd;
-    --base0F: #be5046;
-  }
-  .sakura {
-    --base00: #feedf3;
-    --base01: #f8e2e7;
-    --base02: #e0ccd1;
-    --base03: #755f64;
-    --base04: #665055;
-    --base05: #564448;
-    --base06: #42383a;
-    --base07: #33292b;
-    --base08: #df2d52;
-    --base09: #f6661e;
-    --base0A: #c29461;
-    --base0B: #2e916d;
-    --base0C: #1d8991;
-    --base0D: #006e93;
-    --base0E: #5e2180;
-    --base0F: #ba0d35;
-  }
-  .rebecca {
-    --base00: #292a44;
-    --base01: #663399;
-    --base02: #383a62;
-    --base03: #666699;
-    --base04: #a0a0c5;
-    --base05: #f1eff8;
-    --base06: #ccccff;
-    --base07: #53495d;
-    --base08: #a0a0c5;
-    --base09: #efe4a1;
-    --base0A: #ae81ff;
-    --base0B: #6dfedf;
-    --base0C: #8eaee0;
-    --base0D: #2de0a7;
-    --base0E: #7aa5ff;
-    --base0F: #ff79c6;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+  --base00: #001100;
+  --base01: #003300;
+  --base02: #005500;
+  --base03: #007700;
+  --base04: #009900;
+  --base05: #00bb00;
+  --base06: #00dd00;
+  --base07: #00ff00;
+  --base08: #007700;
+  --base09: #009900;
+  --base0A: #007700;
+  --base0B: #00bb00;
+  --base0C: #005500;
+  --base0D: #009900;
+  --base0E: #00bb00;
+  --base0F: #005500;
+}
+.icy {
+  --base00: #021012;
+  --base01: #031619;
+  --base02: #041f23;
+  --base03: #052e34;
+  --base04: #064048;
+  --base05: #095b67;
+  --base06: #0c7c8c;
+  --base07: #109cb0;
+  --base08: #16c1d9;
+  --base09: #b3ebf2;
+  --base0A: #80deea;
+  --base0B: #4dd0e1;
+  --base0C: #26c6da;
+  --base0D: #00bcd4;
+  --base0E: #00acc1;
+  --base0F: #0097a7;
+}
+.monokai {
+  --base00: #272822;
+  --base01: #383830;
+  --base02: #49483e;
+  --base03: #75715e;
+  --base04: #a59f85;
+  --base05: #f8f8f2;
+  --base06: #f5f4f1;
+  --base07: #f9f8f5;
+  --base08: #f92672;
+  --base09: #fd971f;
+  --base0A: #f4bf75;
+  --base0B: #a6e22e;
+  --base0C: #a1efe4;
+  --base0D: #66d9ef;
+  --base0E: #ae81ff;
+  --base0F: #cc6633;
+}
+.mocha {
+  --base00: #3b3228;
+  --base01: #534636;
+  --base02: #645240;
+  --base03: #7e705a;
+  --base04: #b8afad;
+  --base05: #d0c8c6;
+  --base06: #e9e1dd;
+  --base07: #f5eeeb;
+  --base08: #cb6077;
+  --base09: #d28b71;
+  --base0A: #f4bc87;
+  --base0B: #beb55b;
+  --base0C: #7bbda4;
+  --base0D: #8ab3b5;
+  --base0E: #a89bb9;
+  --base0F: #bb9584;
+}
+.ocean {
+  --base00: #2b303b;
+  --base01: #343d46;
+  --base02: #4f5b66;
+  --base03: #65737e;
+  --base04: #a7adba;
+  --base05: #c0c5ce;
+  --base06: #dfe1e8;
+  --base07: #eff1f5;
+  --base08: #bf616a;
+  --base09: #d08770;
+  --base0A: #ebcb8b;
+  --base0B: #a3be8c;
+  --base0C: #96b5b4;
+  --base0D: #8fa1b3;
+  --base0E: #b48ead;
+  --base0F: #ab7967;
+}
+.onedark {
+  --base00: #282c34;
+  --base01: #353b45;
+  --base02: #3e4451;
+  --base03: #545862;
+  --base04: #565c64;
+  --base05: #abb2bf;
+  --base06: #b6bdca;
+  --base07: #c8ccd4;
+  --base08: #e06c75;
+  --base09: #d19a66;
+  --base0A: #e5c07b;
+  --base0B: #98c379;
+  --base0C: #56b6c2;
+  --base0D: #61afef;
+  --base0E: #c678dd;
+  --base0F: #be5046;
+}
+.sakura {
+  --base00: #feedf3;
+  --base01: #f8e2e7;
+  --base02: #e0ccd1;
+  --base03: #755f64;
+  --base04: #665055;
+  --base05: #564448;
+  --base06: #42383a;
+  --base07: #33292b;
+  --base08: #df2d52;
+  --base09: #f6661e;
+  --base0A: #c29461;
+  --base0B: #2e916d;
+  --base0C: #1d8991;
+  --base0D: #006e93;
+  --base0E: #5e2180;
+  --base0F: #ba0d35;
+}
+.rebecca {
+  --base00: #292a44;
+  --base01: #383a62;
+  --base02: #663399;
+  --base03: #666699;
+  --base04: #a0a0c5;
+  --base05: #f1eff8;
+  --base06: #ccccff;
+  --base07: #53495d;
+  --base08: #a0a0c5;
+  --base09: #efe4a1;
+  --base0A: #ae81ff;
+  --base0B: #6dfedf;
+  --base0C: #8eaee0;
+  --base0D: #2de0a7;
+  --base0E: #7aa5ff;
+  --base0F: #ff79c6;
+}

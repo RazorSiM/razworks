@@ -30,8 +30,8 @@
         ></g-image>
       </div>
       <div class="flex flex-col items-center justify-center mt-10">
-        <p class="text-accent-fn">{{ $page.keycap.date }}</p>
-        <p class="text-background-highlight">
+        <p class="text-primary">{{ $page.keycap.date }}</p>
+        <p class="text-tertiary">
           {{ $page.keycap.timeToRead }}
           {{ $page.keycap.timeToRead > 1 ? "minutes" : "minute" }} read
         </p>

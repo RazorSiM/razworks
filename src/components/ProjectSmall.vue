@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex flex-col transition-all duration-100 transform rounded shadow-2xl project-card hover:scale-125 hover:z-50 bg-background-base"
+    class="flex flex-col transition-all duration-100 transform rounded shadow-2xl project-card hover:scale-110 hover:z-50 bg-base00"
   >
-    <h3 class="px-3 pt-3 text-xl font-bold text-accent-string">{{ title }}</h3>
+    <h3 class="px-3 pt-3 text-xl font-bold text-primary">{{ title }}</h3>
     <div class="px-3 pb-3 text-sm">
-      <span class="text-accent-fn">{{ date }} </span>
-      <span class="text-background-highlight"
+      <span class="text-secondary">{{ date }} </span>
+      <span class="text-tertiary"
         >{{ timetoread }} {{ timetoread > 1 ? "minutes" : "minute" }} read</span
       >
     </div>
@@ -34,7 +34,7 @@
       <p>{{ excerpt }}</p>
 
       <g-link
-        class="block p-2 mt-2 font-bold text-center border rounded shadow-lg border-background-lighter bg-background-selection hover:bg-background-highlight"
+        class="block p-2 mt-2 font-bold text-center rounded shadow-lg bg-base01 hover:bg-base02"
         :to="url"
         >Checkout this project!</g-link
       >
