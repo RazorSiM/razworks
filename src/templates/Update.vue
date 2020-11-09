@@ -39,5 +39,84 @@ query($id: ID!) {
 }
 </page-query>
 <script>
-export default {};
+export default {
+  metaInfo() {
+    return {
+      title: this.$page.update.title,
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content: this.$page.update.excerpt,
+        },
+        {
+          key: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          key: "twitter:site",
+          name: "twitter:site",
+          content: "@Razor_SiM",
+        },
+        {
+          key: "twitter:creator",
+          name: "twitter:creator",
+          content: "@Razor_SiM",
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: "Raz.WORKS - " + this.$page.update.title,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.update.excerpt,
+        },
+        {
+          key: "twitter:image",
+          name: "twitter:image",
+          content: "https://raz.works" + this.$page.update.featuredImage.src,
+        },
+        {
+          key: "twitter:image:alt",
+          name: "twitter:image:alt",
+          content: this.$page.update.title,
+        },
+        {
+          key: "og:type",
+          name: "og:type",
+          content: "article",
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: "Raz.WORKS - " + this.$page.update.title,
+        },
+        {
+          key: "og:description",
+          name: "og:description",
+          content: this.$page.update.excerpt,
+        },
+
+        {
+          key: "og:image:alt",
+          name: "og:image:alt",
+          content: this.$page.update.title,
+        },
+        {
+          key: "og:image",
+          name: "og:image",
+          content: "https://raz.works" + this.$page.update.featuredImage.src,
+        },
+        {
+          key: "og:url",
+          name: "og:url",
+          content: "https://raz.works" + this.$page.update.path,
+        },
+      ],
+    };
+  },
+};
 </script>

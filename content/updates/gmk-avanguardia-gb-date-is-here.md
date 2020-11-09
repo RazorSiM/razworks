@@ -2,6 +2,7 @@
 date: 2020-11-09
 featuredImage: ''
 title: GMK Avanguardia GB date is here
+excerpt: Finally after months of iterations I can finally announce the GMK Avanguardia GB Date 15th December
 ---
 
 # GMK Avanguardia GB date is here!

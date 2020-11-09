@@ -74,7 +74,7 @@ export default {
       {
         key: "twitter:title",
         name: "twitter:title",
-        content: "Raz.WORKS - Home",
+        content: "Raz.WORKS - Projects",
       },
       {
         key: "twitter:description",
@@ -105,7 +105,7 @@ export default {
       {
         key: "og:title",
         name: "og:title",
-        content: "Raz.WORKS - Home",
+        content: "Raz.WORKS - Projects",
       },
       {
         key: "og:description",

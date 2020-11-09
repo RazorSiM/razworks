@@ -2,6 +2,7 @@
 date: 2020-11-08
 featuredImage: ''
 title: New Website section and changes
+excerpt: Hey boys, I've made an Updates section where you'll fine all the changelogs and info about the projects i follow.
 ---
 
 # New Website section and changes
