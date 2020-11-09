@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="flex justify-center px-4 pt-24 updates">
-      <div class="container flex justify-center mx-auto">
-        <div class="w-2/6 px-5">
+    <div class="px-4 pt-24 updates">
+      <div class="justify-center mx-auto md:flex md:container">
+        <div class="w-full md:w-2/6 md:pr-5">
           <shell
             title="Updates"
             distroTitle="Arch Linux"
@@ -26,9 +26,12 @@
                 >
               </li>
             </ul>
+            <div class="flex justify-center w-full">
+              <pager class="py-5" :info="$page.updates.pageInfo"></pager>
+            </div>
           </shell>
         </div>
-        <div class="w-4/6 px-5">
+        <div class="w-full mt-16 md:mt-0 md:w-4/6 md:pl-5">
           <shell
             title="Notes"
             distroTitle="Arch Linux"
@@ -36,7 +39,7 @@
             class="w-full shadow-2xl"
           >
             <div
-              class="mx-auto prose prose-lg"
+              class="mx-auto prose-sm prose md:prose lg:prose-lg xl:prose-xl"
               v-for="edge in $page.updates.edges"
               :key="`update-${edge.node.id}`"
             >
@@ -79,8 +82,9 @@
           </shell>
         </div>
       </div>
-
-      <pager :info="$page.updates.pageInfo"></pager>
+      <div class="flex justify-center w-full mt-10">
+        <pager class="py-5" :info="$page.updates.pageInfo"></pager>
+      </div>
     </div>
   </Layout>
 </template>
