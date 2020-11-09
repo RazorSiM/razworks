@@ -47,6 +47,10 @@ module.exports = {
       options: {
         typeName: "Home",
         path: "content/pages/home.md",
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
       },
     },
     {
@@ -54,6 +58,10 @@ module.exports = {
       options: {
         typeName: "About",
         path: "content/pages/about.md",
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
       },
     },
     {
@@ -68,11 +76,28 @@ module.exports = {
         },
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "content/updates/*.md",
+        typeName: "Update",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
+      },
+    },
   ],
   templates: {
     Keycap: [
       {
         path: "/projects/keycaps/:title",
+      },
+    ],
+    Update: [
+      {
+        path: "/updates/:title",
       },
     ],
   },

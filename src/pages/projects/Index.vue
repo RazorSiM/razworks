@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <div class="projects px-4 pt-24">
-      <div class="prose lg:prose-xl mb-20 mx-auto">
+    <div class="px-4 pt-24 projects">
+      <div class="mx-auto mb-20 prose lg:prose-xl">
         <h1 class="text-4xl font-bold">Projects</h1>
         <p>
           These are past and ongoing projects I worked on. Keep in mind not all
@@ -13,7 +13,7 @@
       </div>
       <div class="container mx-auto">
         <div
-          class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
+          class="grid grid-flow-row grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
         >
           <project-small
             v-for="edge in $page.keycaps.edges"
@@ -33,7 +33,7 @@ query {
    keycaps: allKeycap {
     edges {
       node {
-        id,
+        id
         excerpt
         title
         featuredImage(quality: 40)

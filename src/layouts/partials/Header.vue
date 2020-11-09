@@ -96,6 +96,11 @@
                   class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-foreground focus:outline-none hover:bg-base03 hover:text-fmuted"
                   >Projects
                 </g-link>
+                <g-link
+                  to="/updates/"
+                  class="px-3 py-2 ml-4 text-sm font-medium leading-5 transition duration-150 ease-in-out rounded text-foreground focus:outline-none hover:bg-base03 hover:text-fmuted"
+                  >Updates
+                </g-link>
               </div>
             </div>
           </div>
@@ -176,6 +181,11 @@
             to="/projects/"
             class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-foreground hover:bg-base02 focus:outline-none"
             >Projects
+          </g-link>
+          <g-link
+            to="/updates/"
+            class="block px-3 py-2 mt-1 text-base font-medium transition duration-150 ease-in-out rounded-md text-foreground hover:bg-base02 focus:outline-none"
+            >Updates
           </g-link>
         </div>
       </div>

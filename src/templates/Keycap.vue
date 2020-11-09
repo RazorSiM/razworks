@@ -151,20 +151,20 @@ query ($id: ID!) {
     title
     date (format: "MMMM DD, YYYY")
     logo (width: 250)
-    featuredImage (quality: 100  fit: cover )
+    featuredImage (quality: 80  fit: cover )
     excerpt
     timeToRead
     kits {
-      image
+      image (quality: 80 fit: cover)
       name
     }
     mousepads {
-      image
+      image (quality: 80 fit: cover)
       name
     }
     renders {
+      images (quality: 80 fit: cover)
       name
-      images
     }
     content
     

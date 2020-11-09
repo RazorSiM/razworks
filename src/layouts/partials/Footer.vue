@@ -11,11 +11,17 @@
         <g-link to="https://tailwindcss.com">TailwindCSS</g-link> under the hood
         🐱‍👤
       </p>
+
       <div class="flex justify-center">
         <socials
           class="grid justify-center w-full grid-flow-col gap-4 my-5"
         ></socials>
       </div>
+      <small class="text-center"
+        >Copyright© {{ new Date().getFullYear() }}
+        <a class="text-primary" href="https://raz.works">Raz.WORKS</a> - All
+        Rights Reserved</small
+      >
     </div>
   </footer>
 </template>

@@ -3,8 +3,7 @@
     <div class="container px-4 mx-auto index md:px-16">
       <div class="flex justify-center w-full my-20 intro md:my-32">
         <shell
-          title="zsh"
-          command="./init.sh"
+          title="Intro"
           distroTitle="Arch Linux"
           :distroIcon="distroIcon"
           class="w-full shadow-2xl"
