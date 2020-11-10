@@ -5,9 +5,9 @@
         <h1 class="text-4xl font-bold">Projects</h1>
         <p>
           These are past and ongoing projects I worked on. Keep in mind not all
-          these <strong>group buys</strong> and
+          these <strong>groups buys</strong> and
           <strong>interest checks</strong> are run by me - if something is here
-          it does means I made some render/graphic here and there 😎. You can
+          it does mean I made some render/graphic here and there 😎. You can
           check more inside every project!
         </p>
       </div>

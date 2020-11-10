@@ -18,7 +18,7 @@ renders:
 ---
 # ePBT Grand Tour by FEDEMITO
 
-*I am not the GB Runner here! I was commissioned some renders and mousepads designs! Below will be ONLY my renders/designs, nothing else*
+*I am not the GB Runner here! They commissioned me some renders and mousepads designs! Below will be ONLY my renders/designs, nothing else*
 
 Link to the IC on Geekhack [here](https://geekhack.org/index.php?topic=108068.0), link to the Discord server [here](https://discord.gg/5RcuT2c).
 
@@ -40,7 +40,7 @@ These are the **proxies**
 There will be collaborations with **RAMA** and **Artkey**
 
 
-Inspired from a poster (I love it) that my best friends gave to me for my birthday a couple of years ago.
+Inspired by a poster (I love it) that my best friends gave to me for my birthday a couple of years ago.
 ![NASA Artwork](https://www.jpl.nasa.gov/visions-of-the-future/images/grand_tour.jpg)
 
 The poster itself is from NASA/JPL.

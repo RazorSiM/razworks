@@ -54,8 +54,8 @@ renders:
 ## GB IS OFFICIAL 🥳
 
 The GB will run from the **15th of December** to the **15th of January**!
-We are setting up the prices and there will be a collaboration with [Artkey](https://artkeyuniverse.com/) for a good lokin' artisan.
-More to come in the next days, untill then there are official proxies for the US and Oceania too. They are [Vala Supply](https://vala.supply/) and [Switchkeys](https://www.switchkeys.com.au/) and I'm very happy to work with them!
+We are setting up the prices and there will be a collaboration with [Artkey](https://artkeyuniverse.com/) for a good looking artisan.
+More to come in the next days, until then there are official proxies for the US and Oceania too. They are [Vala Supply](https://vala.supply/) and [Switchkeys](https://www.switchkeys.com.au/) and I'm very happy to work with them!
 
 Proxy Recap
 
@@ -67,7 +67,7 @@ Proxy Recap
 | USA       | [Vala Supply](https://vala.supply/)  |
 | Oceania   | [Switchkeys](https://www.switchkeys.com.au/)  |
 
-I'll update you guys with prices and all the fuzz when I can get all the infos 👽
+I'll update you guys with prices and all the fuzz when I can get all the info 👽
 
 PS: here's the packaging concept
 ![GMK Avanguardia Packaging](./images/avanguardia/packaging.jpg)
@@ -75,13 +75,13 @@ PS: here's the packaging concept
 ### About the set
 
 I partnered up with my friend and designer Johnnymalandra and came up with the idea of **GMK Avanguardia**:
-I chose an italian word that, as you can guess corresponds to _Avant-guard_ or _Vanguard_,
-referring to all those extreme, daring and innovative artists with a futuristic sight capable of anticipating their times.
+I chose an Italian word that, as you can guess corresponds to _Avant-guard_ or _Vanguard_,
+referring to all those extreme, daring, and innovative artists with a futuristic sight capable of anticipating their times.
 
 I have seen that sets featuring themes related to modern pop culture have always been appreciated, so I thought, why not pay respect to a great artist who influenced it the most in shapes and colors.
 More than content, this set draws its inspiration from **Kandinsky's words**:
 
-> Art goes beyond the limits in which time would like to compress it, and indicates the content in the future
+> Art goes beyond the limits in which time would like to compress it and indicates the content in the future
 
 The Color Palette
 ![Palette](https://i.imgur.com/r1Pl3t8.jpg)

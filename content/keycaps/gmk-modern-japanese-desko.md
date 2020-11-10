@@ -43,14 +43,14 @@ renders:
 
 # GMK Modern Japanese Desko
 
-**DISCLAIMER**: *I am not the GB Runner! I worked with [Enjoy](https://www.instagram.com/enjoymyinsec/) (the GB Runner) on this set this set by rendering the kits, keebs and designing the mousepadsad*
+**DISCLAIMER**: *I am not the GB Runner! I worked with [Enjoy](https://www.instagram.com/enjoymyinsec/) (the GB Runner) on this set by rendering the kits, keyboards and designing the mousepads*
 
 - Link to [Enjoy Instagram](https://www.instagram.com/enjoymyinsec/)
 - Link to [Enjoy Discord Server](https://discord.com/invite/4MC7Egw)
 - Link to [Geekhack](https://geekhack.org/index.php?topic=108830.0)
 
 
->Most people know that I'm a topre lover, I don't deny it, I always wanted to make a set that would be a direct tribute to a topre keyboard/keyset.That said, there was always 1 specific topre keyboard that I loved, the norbaforce owned by nmur. I asked his permission on that, and he was keen to let me use his very personnal colorway to make this particular GMK set! I decided to tweak it a bit to make it more "modern" by having icon mods and more flashy colors instead of the standard RGB Desko look.
+>Most people know that I'm a topre lover, I don't deny it, I always wanted to make a set that would be a direct tribute to a topre keyboard/keyset. That said, there was always 1 specific topre keyboard that I loved, the norbaforce owned by nmur. I asked his permission on that, and he was keen to let me use his very personal colorway to make this particular GMK set! I decided to tweak it a bit to make it more "modern" by having icon mods and more flashy colors instead of the standard RGB Desko look.
 
 The Color Palette
 ![Palette](https://i.imgur.com/ebETnks.jpg)
