@@ -77,7 +77,10 @@ export default {
         {
           key: "twitter:image",
           name: "twitter:image",
-          content: "https://raz.works" + this.$page.update.featuredImage.src,
+          content:
+            "https://raz.works" + this.$page.update.featuredImage.src
+              ? this.$page.update.featuredImage.src
+              : "/socialShare.jpg",
         },
         {
           key: "twitter:image:alt",
@@ -108,7 +111,10 @@ export default {
         {
           key: "og:image",
           name: "og:image",
-          content: "https://raz.works" + this.$page.update.featuredImage.src,
+          content:
+            "https://raz.works" + this.$page.update.featuredImage.src
+              ? this.$page.update.featuredImage.src
+              : "/socialShare.jpg",
         },
         {
           key: "og:url",
