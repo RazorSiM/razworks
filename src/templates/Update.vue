@@ -8,10 +8,10 @@
       />
 
       <div class="px-4 pt-24 mx-auto prose mx auto lg:prose-xl md:px-0">
-        <div class="relative pb-2/3" v-if="$page.update.featuredImage">
+        <div class="relative pb-1/3" v-if="$page.update.featuredImage">
           <g-image
             :src="$page.update.featuredImage"
-            class="absolute bottom-0 object-cover w-full h-full rounded-t-lg"
+            class="absolute bottom-0 object-cover w-full h-full rounded-lg"
           ></g-image>
         </div>
         <div class="flex flex-col items-center justify-center w-full mt-10">
@@ -31,15 +31,33 @@ query($id: ID!) {
   update(id: $id) {
     path
     title
+    excerpt
     date (format: "MMMM DD, YYYY")
     timeToRead
     content
-    featuredImage
+    featuredImage (quality: 80 fit: cover)
   }
 }
 </page-query>
 <script>
 export default {
+  data() {
+    return {
+      defaultImage: "/socialShare.jpg",
+    };
+  },
+  computed: {
+    featured() {
+      if (this.$page.update.featuredImage) {
+        if (this.$page.update.featuredImage.src) {
+          return this.$page.update.featuredImage.src;
+        }
+        return this.defaultImage;
+      } else {
+        return this.defaultImage;
+      }
+    },
+  },
   metaInfo() {
     return {
       title: this.$page.update.title,
@@ -77,10 +95,7 @@ export default {
         {
           key: "twitter:image",
           name: "twitter:image",
-          content:
-            "https://raz.works" + this.$page.update.featuredImage.src
-              ? this.$page.update.featuredImage.src
-              : "/socialShare.jpg",
+          content: "https://raz.works" + this.featured,
         },
         {
           key: "twitter:image:alt",
@@ -111,10 +126,7 @@ export default {
         {
           key: "og:image",
           name: "og:image",
-          content:
-            "https://raz.works" + this.$page.update.featuredImage.src
-              ? this.$page.update.featuredImage.src
-              : "/socialShare.jpg",
+          content: "https://raz.works" + this.featured,
         },
         {
           key: "og:url",

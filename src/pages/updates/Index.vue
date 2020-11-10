@@ -46,10 +46,10 @@
               <div class="relative pb-1/3" v-if="edge.node.featuredImage">
                 <g-image
                   :src="edge.node.featuredImage"
-                  class="absolute bottom-0 object-cover w-full h-full rounded-t-lg"
+                  class="absolute bottom-0 object-cover w-full h-full rounded-lg"
                 ></g-image>
               </div>
-              <div class="flex flex-col w-full pt-10">
+              <div class="flex flex-col w-full pt-5">
                 <span class="text-primary">{{ edge.node.date }} </span>
                 <span class="text-secondary">
                   {{ edge.node.timeToRead }}
@@ -103,6 +103,7 @@ query ($page:Int) {
         title
         timeToRead
         content
+        featuredImage (quality: 80 fit: cover)
       }
     }
   }
@@ -223,3 +224,8 @@ export default {
   },
 };
 </script>
+<style>
+img {
+  margin: 0 !important;
+}
+</style>

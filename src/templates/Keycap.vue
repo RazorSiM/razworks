@@ -11,7 +11,10 @@
 
       <div class="relative shadow-2xl hero">
         <g-image
-          v-if="$page.keycap.featuredImage !== null"
+          v-if="
+            $page.keycap.featuredImage !== null &&
+            $page.keycap.featuredImage !== ''
+          "
           :src="$page.keycap.featuredImage"
           class="w-full h-auto"
           :alt="$page.keycap.title"
@@ -23,7 +26,7 @@
           {{ $page.keycap.title }}
         </h1>
         <g-image
-          v-if="$page.keycap.logo !== null"
+          v-if="$page.keycap.logo !== null && $page.keycap.logo !== ''"
           class="absolute bottom-0 p-4"
           :src="$page.keycap.logo"
           :alt="$page.keycap.title + ' logo'"
