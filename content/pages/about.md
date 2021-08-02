@@ -23,6 +23,6 @@ If you're curious, this website is built on top of [Gridsome](https://gridsome.o
 
 I am waiting for **GMK Avanguardia** to go GB soon™; meanwhile I am helping people from the community getting some works done by **rendering** and **creating stuff**. I am **always open to commissions** as this is my actual side job! You can contact me on **Discord** or via **mail**, you can find the contacts at the end of this page 👽
 
-PS: my English is like the one of your 4 years old cousin, so contact me for corrections, I'll be forever grateful to you!
+PS: my English is like the one of your 4-year-old cousin, so contact me for corrections, I'll be forever grateful to you!
 
 PPS: if you find any bugs, see above 🤖
